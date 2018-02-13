@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsRunCard" targetNamespace="http://tempuri.org/dsRunCard.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/dsRunCard.xsd" xmlns:mstns="http://tempuri.org/dsRunCard.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="MES_OPER_RECIPE">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="OPERSEQ" type="xs:string" />
+        <xs:element name="Operation" type="xs:string" />
+        <xs:element name="OperationDescr" type="xs:string" />
+        <xs:element name="RECIPEID" type="xs:string" />
+        <xs:element name="OPERNO" type="xs:string" />
+        <xs:element name="EDC" type="xs:string" />
+        <xs:element name="ERP_Route_LTEXT" type="xs:string" />
+        <xs:element name="ERP_Route_ARBPL" type="xs:string" />
+        <xs:element name="ERP_Route_LTXA1" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MES_WIP_LOT">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="LOT" type="xs:string" />
+        <xs:element name="Device" type="xs:string" />
+        <xs:element name="Quantity" type="xs:int" />
+        <xs:element name="Unit" type="xs:string" />
+        <xs:element name="Customer" type="xs:string" />
+        <xs:element name="Product" type="xs:string" />
+        <xs:element name="Route" type="xs:string" />
+        <xs:element name="DueDate" type="xs:string" />
+        <xs:element name="ScheduleDate" type="xs:string" />
+        <xs:element name="CommitDate" type="xs:string" />
+        <xs:element name="CustLot" type="xs:string" />
+        <xs:element name="WO" type="xs:string" />
+        <xs:element name="DeviceCode" type="xs:string" />
+        <xs:element name="LotType" type="xs:string" />
+        <xs:element name="LotTypeDescr" type="xs:string" />
+        <xs:element name="WOLot" type="xs:string" />
+        <xs:element name="WOQuantity" type="xs:int" />
+        <xs:element name="InvLot" type="xs:string" />
+        <xs:element name="DeviceDescr" type="xs:string" />
+        <xs:element name="DeviceBPNo" type="xs:string" />
+        <xs:element name="DeviceBPRev" type="xs:string" />
+        <xs:element name="MaterialLot" type="xs:string" />
+        <xs:element name="ProductionDate" type="xs:string" />
+        <xs:element name="BOM_MATNR" type="xs:string" />
+        <xs:element name="Device_PLMNO" type="xs:string" />
+        <xs:element name="Device_PLMVR" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

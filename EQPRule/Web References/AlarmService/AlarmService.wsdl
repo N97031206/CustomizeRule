@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="LaunchAlarmNowMailToSpecifyUserSID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="module" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="type" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="msg" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="createtype" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mailto" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LaunchAlarmNowMailToSpecifyUserSIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LaunchAlarmNowMailToSpecifyUserSIDResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LaunchAlarmNow">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="module" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="type" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="msg" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="createtype" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LaunchAlarmNowResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LaunchAlarmNowResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LaunchAlarm">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="module" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="type" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="msg" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="alarmtime" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="createtype" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LaunchAlarmResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LaunchAlarmResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckAlarm">
+        <s:complexType />
+      </s:element>
+      <s:element name="CheckAlarmResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CheckAlarmResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="LaunchAlarmNowMailToSpecifyUserSIDSoapIn">
+    <wsdl:part name="parameters" element="tns:LaunchAlarmNowMailToSpecifyUserSID" />
+  </wsdl:message>
+  <wsdl:message name="LaunchAlarmNowMailToSpecifyUserSIDSoapOut">
+    <wsdl:part name="parameters" element="tns:LaunchAlarmNowMailToSpecifyUserSIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="LaunchAlarmNowSoapIn">
+    <wsdl:part name="parameters" element="tns:LaunchAlarmNow" />
+  </wsdl:message>
+  <wsdl:message name="LaunchAlarmNowSoapOut">
+    <wsdl:part name="parameters" element="tns:LaunchAlarmNowResponse" />
+  </wsdl:message>
+  <wsdl:message name="LaunchAlarmSoapIn">
+    <wsdl:part name="parameters" element="tns:LaunchAlarm" />
+  </wsdl:message>
+  <wsdl:message name="LaunchAlarmSoapOut">
+    <wsdl:part name="parameters" element="tns:LaunchAlarmResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckAlarmSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckAlarm" />
+  </wsdl:message>
+  <wsdl:message name="CheckAlarmSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckAlarmResponse" />
+  </wsdl:message>
+  <wsdl:portType name="AlarmServiceSoap">
+    <wsdl:operation name="LaunchAlarmNowMailToSpecifyUserSID">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Launch Alarm Now specify userid</wsdl:documentation>
+      <wsdl:input message="tns:LaunchAlarmNowMailToSpecifyUserSIDSoapIn" />
+      <wsdl:output message="tns:LaunchAlarmNowMailToSpecifyUserSIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LaunchAlarmNow">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Launch Alarm Now</wsdl:documentation>
+      <wsdl:input message="tns:LaunchAlarmNowSoapIn" />
+      <wsdl:output message="tns:LaunchAlarmNowSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LaunchAlarm">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Launch Alarm</wsdl:documentation>
+      <wsdl:input message="tns:LaunchAlarmSoapIn" />
+      <wsdl:output message="tns:LaunchAlarmSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckAlarm">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Check Alarm Execution Status</wsdl:documentation>
+      <wsdl:input message="tns:CheckAlarmSoapIn" />
+      <wsdl:output message="tns:CheckAlarmSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="AlarmServiceSoap" type="tns:AlarmServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="LaunchAlarmNowMailToSpecifyUserSID">
+      <soap:operation soapAction="http://tempuri.org/LaunchAlarmNowMailToSpecifyUserSID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LaunchAlarmNow">
+      <soap:operation soapAction="http://tempuri.org/LaunchAlarmNow" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LaunchAlarm">
+      <soap:operation soapAction="http://tempuri.org/LaunchAlarm" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckAlarm">
+      <soap:operation soapAction="http://tempuri.org/CheckAlarm" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="AlarmServiceSoap12" type="tns:AlarmServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="LaunchAlarmNowMailToSpecifyUserSID">
+      <soap12:operation soapAction="http://tempuri.org/LaunchAlarmNowMailToSpecifyUserSID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LaunchAlarmNow">
+      <soap12:operation soapAction="http://tempuri.org/LaunchAlarmNow" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LaunchAlarm">
+      <soap12:operation soapAction="http://tempuri.org/LaunchAlarm" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckAlarm">
+      <soap12:operation soapAction="http://tempuri.org/CheckAlarm" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AlarmService">
+    <wsdl:port name="AlarmServiceSoap" binding="tns:AlarmServiceSoap">
+      <soap:address location="http://localhost/sai/alm/Services/AlarmService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="AlarmServiceSoap12" binding="tns:AlarmServiceSoap12">
+      <soap12:address location="http://localhost/sai/alm/Services/AlarmService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

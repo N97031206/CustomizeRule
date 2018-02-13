@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="W036_ds" targetNamespace="http://tempuri.org/dsRunCard.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/dsRunCard.xsd" xmlns:mstns="http://tempuri.org/dsRunCard.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="INVData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="INVDate" type="xs:string" />
+        <xs:element name="ITEM" type="xs:string" />
+        <xs:element name="Device" type="xs:string" />
+        <xs:element name="DeviceDescr" type="xs:string" />
+        <xs:element name="WO" type="xs:string" />
+        <xs:element name="Loaction" type="xs:string" />
+        <xs:element name="Factory" type="xs:string" />
+        <xs:element name="Remark" type="xs:string" />
+        <xs:element name="QUANTITY" type="xs:int" />
+        <xs:element name="InvLot" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

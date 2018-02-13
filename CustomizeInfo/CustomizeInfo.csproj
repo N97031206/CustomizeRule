@@ -1,0 +1,368 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C195DD99-9D2C-4DB5-9A95-56FDAD008F5D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CustomizeRule.CustomizeInfo</RootNamespace>
+    <AssemblyName>CustomizeRule.CutomizeInfo</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ares.Cimes.IntelliService">
+      <HintPath>..\..\Reference\Ares.Cimes.IntelliService.dll</HintPath>
+    </Reference>
+    <Reference Include="Ares.Cimes.IntelliService.Data">
+      <HintPath>..\..\Reference\Ares.Cimes.IntelliService.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Ares.Cimes.IntelliService.DataSchema">
+      <HintPath>..\..\Reference\Ares.Cimes.IntelliService.DataSchema.dll</HintPath>
+    </Reference>
+    <Reference Include="Ares.Cimes.SystemIntelliService">
+      <HintPath>..\..\Reference\Ares.Cimes.SystemIntelliService.dll</HintPath>
+    </Reference>
+    <Reference Include="Ares.Cimes.SystemIntelliService.QC, Version=5.0.16.1380, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Reference\Ares.Cimes.SystemIntelliService.QC.dll</HintPath>
+    </Reference>
+    <Reference Include="Ares.Cimes.SystemIntelliService.SLM">
+      <HintPath>..\..\Reference\Ares.Cimes.SystemIntelliService.SLM.dll</HintPath>
+    </Reference>
+    <Reference Include="Ares.Cimes.SystemIntelliService.TMS, Version=5.0.16.1380, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Reference\Ares.Cimes.SystemIntelliService.TMS.dll</HintPath>
+    </Reference>
+    <Reference Include="Ares.Cimes.TextMessage, Version=5.0.16.2007, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Reference\Ares.Cimes.TextMessage.dll</HintPath>
+    </Reference>
+    <Reference Include="CustomizeRule.RuleUtility">
+      <HintPath>..\..\Reference\CustomizeRule.RuleUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DBTableRow\CST_API_CLEANING_DATA_Row.cs" />
+    <Compile Include="DBTableRow\CST_API_COOLING_DOWN_TEMP_Row.cs" />
+    <Compile Include="DBTableRow\CST_API_CPF_SETLOCATION_LOG_Row.cs" />
+    <Compile Include="DBTableRow\CST_API_ERROR_LOG_Row.cs" />
+    <Compile Include="DBTableRow\CST_API_MOLD_COUNT_Row.cs" />
+    <Compile Include="DBTableRow\CST_API_MOLD_RESET_LOG_Row.cs" />
+    <Compile Include="DBTableRow\CST_CMS_CAR_PROCESS_Row.cs" />
+    <Compile Include="DBTableRow\CST_CMS_TEMP_TIME_LOG_Row.cs" />
+    <Compile Include="DBTableRow\CST_CMS_TEMP_TIME_Row.cs" />
+    <Compile Include="DBTableRow\CST_CPF_ELEC_HOTSTOVE_Row.cs" />
+    <Compile Include="DBTableRow\CST_EQP_DEVICE_RELEASE_Row.cs" />
+    <Compile Include="DBTableRow\CST_EQP_FAI_Row.cs" />
+    <Compile Include="DBTableRow\CST_EQP_SETUP_Row.cs" />
+    <Compile Include="DBTableRow\CST_EQP_SETUP_WO_Row.cs" />
+    <Compile Include="DBTableRow\CST_EQP_TOOL_RELEASE_Row.cs" />
+    <Compile Include="DBTableRow\CST_EQP_WORKTIME_HIST_Row.cs" />
+    <Compile Include="DBTableRow\CST_EQP_WORKTIME_Row.cs" />
+    <Compile Include="DBTableRow\CST_EQP_WO_ASSIGN_LOG_Row.cs" />
+    <Compile Include="DBTableRow\CST_EQP_WO_ASSIGN_Row.cs" />
+    <Compile Include="DBTableRow\CST_EDC_COMP_Row.cs" />
+    <Compile Include="DBTableRow\CST_MMS_IQC_INFO_LOG_Row.cs" />
+    <Compile Include="DBTableRow\CST_MMS_IQC_INFO_Row.cs" />
+    <Compile Include="DBTableRow\CST_MMS_IQC_PASS_Row.cs" />
+    <Compile Include="DBTableRow\CST_API_EAP_SERVER_Row.cs" />
+    <Compile Include="DBTableRow\CST_PRC_LINE_Row.cs" />
+    <Compile Include="DBTableRow\CST_PRC_LINE_STATION_Row.cs" />
+    <Compile Include="DBTableRow\CST_PRC_OPER_MAPPING_DATA_Row.cs" />
+    <Compile Include="DBTableRow\CST_PRC_OPER_MAPPING_Row.cs" />
+    <Compile Include="DBTableRow\CST_SYS_LOADER_LOG_Row.cs" />
+    <Compile Include="DBTableRow\CST_TOOL_DEVICE_DETAIL_LOG_Row.cs" />
+    <Compile Include="DBTableRow\CST_TOOL_DEVICE_DETAIL_Row.cs" />
+    <Compile Include="DBTableRow\CST_TOOL_DEVICE_LOG_Row.cs" />
+    <Compile Include="DBTableRow\CST_TOOL_DEVICE_Row.cs" />
+    <Compile Include="DBTableRow\CST_TOOL_ISSUE_Row.cs" />
+    <Compile Include="DBTableRow\CST_TOOL_LABEL_PRINT_LOG_Row.cs" />
+    <Compile Include="DBTableRow\CST_TOOL_LIFE_LOG_Row.cs" />
+    <Compile Include="DBTableRow\CST_TOOL_LIFE_Row.cs" />
+    <Compile Include="DBTableRow\CST_TOOL_REPAIR_LIFE_Row.cs" />
+    <Compile Include="DBTableRow\CST_TOOL_REPAIR_Row.cs" />
+    <Compile Include="DBTableRow\CST_TOOL_REPORT_LOG_Row.cs" />
+    <Compile Include="DBTableRow\CST_TOOL_REPORT_Row.cs" />
+    <Compile Include="DBTableRow\CST_TOOL_TYPE_LIFE_LOG_Row.cs" />
+    <Compile Include="DBTableRow\CST_TOOL_TYPE_LIFE_Row.cs" />
+    <Compile Include="DBTableRow\CST_TOOL_TYPE_PICT_LOG_Row.cs" />
+    <Compile Include="DBTableRow\CST_TOOL_TYPE_PICT_Row.cs" />
+    <Compile Include="DBTableRow\CST_TOOL_USELOG_Row.cs" />
+    <Compile Include="DBTableRow\CST_USR_CHANGE_WORKTIME_Row.cs" />
+    <Compile Include="DBTableRow\CST_USR_CURRENT_STATUS_Row.cs" />
+    <Compile Include="DBTableRow\CST_USR_EXCEPT_WORKTIME_Row.cs" />
+    <Compile Include="DBTableRow\CST_USR_WORKTIME_HIST_Row.cs" />
+    <Compile Include="DBTableRow\CST_USR_WORKTIME_Row.cs" />
+    <Compile Include="DBTableRow\CST_WIP_ASSEMBLY_FILE_LOG_Row.cs" />
+    <Compile Include="DBTableRow\CST_WIP_ASSEMBLY_FILE_Row.cs" />
+    <Compile Include="DBTableRow\CST_WIP_CMM_DATA_Row.cs" />
+    <Compile Include="DBTableRow\CST_WIP_CMM_Row.cs" />
+    <Compile Include="DBTableRow\CST_WIP_DEFECT_JUDGEMENT_Row.cs" />
+    <Compile Include="DBTableRow\CST_WIP_FQC_DEFECT_Row.cs" />
+    <Compile Include="DBTableRow\CST_WIP_PACK_DATA_Row.cs" />
+    <Compile Include="DBTableRow\CST_WIP_PACK_Row.cs" />
+    <Compile Include="DBTableRow\CST_WIP_PACK_TEMP_Row.cs" />
+    <Compile Include="DBTableRow\CST_WMS_DETAIL_BAK_Row.cs" />
+    <Compile Include="DBTableRow\CST_WIP_PPK_Row.cs" />
+    <Compile Include="DBTableRow\CST_WMS_DETAIL_Row.cs" />
+    <Compile Include="DBTableRow\CST_WMS_MAST_BAK_Row.cs" />
+    <Compile Include="DBTableRow\CST_WMS_MAST_Row.cs" />
+    <Compile Include="DBTableRow\CST_WPC_WO_BOM_Row.cs" />
+    <Compile Include="DBTableRow\CST_WPC_WO_LOT_Row.cs" />
+    <Compile Include="DBTableRow\CST_WPC_WO_ROUTE_Row.cs" />
+    <Compile Include="DBTableSchema\CST_API_CLEANING_DATA.cs" />
+    <Compile Include="DBTableSchema\CST_API_COOLING_DOWN_TEMP.cs" />
+    <Compile Include="DBTableSchema\CST_API_CPF_SETLOCATION_LOG.cs" />
+    <Compile Include="DBTableSchema\CST_API_ERROR_LOG.cs" />
+    <Compile Include="DBTableSchema\CST_API_MOLD_COUNT.cs" />
+    <Compile Include="DBTableSchema\CST_API_MOLD_RESET_LOG.cs" />
+    <Compile Include="DBTableSchema\CST_CMS_CAR_PROCESS.cs" />
+    <Compile Include="DBTableSchema\CST_CMS_TEMP_TIME.cs" />
+    <Compile Include="DBTableSchema\CST_CMS_TEMP_TIME_LOG.cs" />
+    <Compile Include="DBTableSchema\CST_CPF_ELEC_HOTSTOVE.cs" />
+    <Compile Include="DBTableSchema\CST_EQP_DEVICE_RELEASE.cs" />
+    <Compile Include="DBTableSchema\CST_EQP_FAI.cs" />
+    <Compile Include="DBTableSchema\CST_EQP_SETUP.cs" />
+    <Compile Include="DBTableSchema\CST_EQP_SETUP_WO.cs" />
+    <Compile Include="DBTableSchema\CST_EQP_TOOL_RELEASE.cs" />
+    <Compile Include="DBTableSchema\CST_EQP_WORKTIME.cs" />
+    <Compile Include="DBTableSchema\CST_EQP_WORKTIME_HIST.cs" />
+    <Compile Include="DBTableSchema\CST_EQP_WO_ASSIGN.cs" />
+    <Compile Include="DBTableSchema\CST_EQP_WO_ASSIGN_LOG.cs" />
+    <Compile Include="DBTableSchema\CST_EDC_COMP.cs" />
+    <Compile Include="DBTableSchema\CST_MMS_IQC_INFO.cs" />
+    <Compile Include="DBTableSchema\CST_MMS_IQC_INFO_LOG.cs" />
+    <Compile Include="DBTableSchema\CST_MMS_IQC_PASS.cs" />
+    <Compile Include="DBTableSchema\CST_API_EAP_SERVER.cs" />
+    <Compile Include="DBTableSchema\CST_PRC_LINE.cs" />
+    <Compile Include="DBTableSchema\CST_PRC_LINE_STATION.cs" />
+    <Compile Include="DBTableSchema\CST_PRC_OPER_MAPPING.cs" />
+    <Compile Include="DBTableSchema\CST_PRC_OPER_MAPPING_DATA.cs" />
+    <Compile Include="DBTableSchema\CST_SYS_LOADER_LOG.cs" />
+    <Compile Include="DBTableSchema\CST_TOOL_DEVICE.cs" />
+    <Compile Include="DBTableSchema\CST_TOOL_DEVICE_DETAIL.cs" />
+    <Compile Include="DBTableSchema\CST_TOOL_DEVICE_DETAIL_LOG.cs" />
+    <Compile Include="DBTableSchema\CST_TOOL_DEVICE_LOG.cs" />
+    <Compile Include="DBTableSchema\CST_TOOL_ISSUE.cs" />
+    <Compile Include="DBTableSchema\CST_TOOL_LABEL_PRINT_LOG.cs" />
+    <Compile Include="DBTableSchema\CST_TOOL_LIFE.cs" />
+    <Compile Include="DBTableSchema\CST_TOOL_LIFE_LOG.cs" />
+    <Compile Include="DBTableSchema\CST_TOOL_REPAIR.cs" />
+    <Compile Include="DBTableSchema\CST_TOOL_REPAIR_LIFE.cs" />
+    <Compile Include="DBTableSchema\CST_TOOL_REPORT.cs" />
+    <Compile Include="DBTableSchema\CST_TOOL_REPORT_LOG.cs" />
+    <Compile Include="DBTableSchema\CST_TOOL_TYPE_LIFE.cs" />
+    <Compile Include="DBTableSchema\CST_TOOL_TYPE_LIFE_LOG.cs" />
+    <Compile Include="DBTableSchema\CST_TOOL_TYPE_PICT.cs" />
+    <Compile Include="DBTableSchema\CST_TOOL_TYPE_PICT_LOG.cs" />
+    <Compile Include="DBTableSchema\CST_TOOL_USELOG.cs" />
+    <Compile Include="DBTableSchema\CST_USR_CHANGE_WORKTIME.cs" />
+    <Compile Include="DBTableSchema\CST_USR_CURRENT_STATUS.cs" />
+    <Compile Include="DBTableSchema\CST_USR_EXCEPT_WORKTIME.cs" />
+    <Compile Include="DBTableSchema\CST_USR_WORKTIME.cs" />
+    <Compile Include="DBTableSchema\CST_USR_WORKTIME_HIST.cs" />
+    <Compile Include="DBTableSchema\CST_WIP_ASSEMBLY_FILE.cs" />
+    <Compile Include="DBTableSchema\CST_WIP_ASSEMBLY_FILE_LOG.cs" />
+    <Compile Include="DBTableSchema\CST_WIP_CMM.cs" />
+    <Compile Include="DBTableSchema\CST_WIP_CMM_DATA.cs" />
+    <Compile Include="DBTableSchema\CST_WIP_DEFECT_JUDGEMENT.cs" />
+    <Compile Include="DBTableSchema\CST_WIP_FQC_DEFECT.cs" />
+    <Compile Include="DBTableSchema\CST_WIP_PACK.cs" />
+    <Compile Include="DBTableSchema\CST_WIP_PACK_DATA.cs" />
+    <Compile Include="DBTableSchema\CST_WIP_PACK_TEMP.cs" />
+    <Compile Include="DBTableSchema\CST_WIP_PPK.cs" />
+    <Compile Include="DBTableSchema\CST_WMS_DETAIL.cs" />
+    <Compile Include="DBTableSchema\CST_WMS_DETAIL_BAK.cs" />
+    <Compile Include="DBTableSchema\CST_WMS_MAST.cs" />
+    <Compile Include="DBTableSchema\CST_WMS_MAST_BAK.cs" />
+    <Compile Include="DBTableSchema\CST_WPC_WO_BOM.cs" />
+    <Compile Include="DBTableSchema\CST_WPC_WO_LOT.cs" />
+    <Compile Include="DBTableSchema\CST_WPC_WO_ROUTE.cs" />
+    <Compile Include="ExtendInfo\ComponentNonactiveInfoEx.cs" />
+    <Compile Include="ExtendInfo\ComponentInfoEx.cs" />
+    <Compile Include="ExtendInfo\EquipmentInfoEx.cs" />
+    <Compile Include="ExtendInfo\DeviceVersionInfoEx.cs" />
+    <Compile Include="ExtendInfo\EquipToolInfoEx.cs" />
+    <Compile Include="ExtendInfo\LotDefectInfoEx.cs" />
+    <Compile Include="ExtendInfo\LotNonActiveInfoEx.cs" />
+    <Compile Include="ExtendInfo\MaterialLotComponentInfoEx.cs" />
+    <Compile Include="ExtendInfo\EquipmentMaterialLotInfoEx.cs" />
+    <Compile Include="ExtendInfo\MaterialLotInfoEx.cs" />
+    <Compile Include="ExtendInfo\OperationInfoEx.cs" />
+    <Compile Include="ExtendInfo\LotInfoEx.cs" />
+    <Compile Include="DBTableRow\CST_WIP_RESERVE_CHECKIN_INFO_Row.cs" />
+    <Compile Include="DBTableRow\CST_WIP_RESERVE_CHECKIN_LOG_Row.cs" />
+    <Compile Include="DBTableSchema\CST_WIP_RESERVE_CHECKIN_INFO.cs" />
+    <Compile Include="DBTableSchema\CST_WIP_RESERVE_CHECKIN_LOG.cs" />
+    <Compile Include="ExtendInfo\DeviceInfoEx.cs" />
+    <Compile Include="ExtendInfo\EquipGroupEquipInfoEx.cs" />
+    <Compile Include="ExtendInfo\OperationResourceInfoEx.cs" />
+    <Compile Include="ExtendInfo\QCInspectionInfoEx.cs" />
+    <Compile Include="ExtendInfo\QCInspectionObjectInfoEx.cs" />
+    <Compile Include="ExtendInfo\ReasonInfoEx.cs" />
+    <Compile Include="ExtendInfo\ToolInfoEx.cs" />
+    <Compile Include="ExtendInfo\ToolTypeInfoEx.cs" />
+    <Compile Include="ExtendInfo\WIPConvertInfoEx.cs" />
+    <Compile Include="ExtendInfo\WIPReasonGroupInfoEx.cs" />
+    <Compile Include="ExtendInfo\WorkOrderInfoEx.cs" />
+    <Compile Include="Info\CSTAPIMoldCountInfo.cs" />
+    <Compile Include="Info\CSTAPIMoldResetLogInfo.cs" />
+    <Compile Include="Info\CSTCMSCarProcessInfo.cs" />
+    <Compile Include="Info\CSTEquipmentDeviceReleaseInfo.cs" />
+    <Compile Include="Info\CSTEquipmentFAIInfo.cs" />
+    <Compile Include="Info\CSTEquipmentSetupInfo.cs" />
+    <Compile Include="Info\CSTEquipmentSetupWorkOrderInfo.cs" />
+    <Compile Include="Info\CSTEquipmentToolReleaseInfo.cs" />
+    <Compile Include="Info\CSTEquipmentWorktimeInfo.cs" />
+    <Compile Include="Info\CSTPrcLineInfo.cs" />
+    <Compile Include="Info\CSTPrcLineStationInfo.cs" />
+    <Compile Include="Info\CSTPRCOperationMappingDataInfo.cs" />
+    <Compile Include="Info\CSTToolDeviceDetailInfo.cs" />
+    <Compile Include="Info\CSTToolDeviceInfo.cs" />
+    <Compile Include="Info\CSTToolLifeInfo.cs" />
+    <Compile Include="Info\CSTToolRepairInfo.cs" />
+    <Compile Include="Info\CSTToolTypeLifeInfo.cs" />
+    <Compile Include="Info\CSTToolTypePictureInfo.cs" />
+    <Compile Include="Info\CSTUserChangeWorktimeInfo.cs" />
+    <Compile Include="Info\CSTUserExceptWorktimeInfo.cs" />
+    <Compile Include="Info\CSTWIPPackInfo.cs" />
+    <Compile Include="Info\CSTWIPPackTempInfo.cs" />
+    <Compile Include="Info\CSTWPCWorkOrderBOMInfo.cs" />
+    <Compile Include="Info\CSTWPCWorkOrderRouteInfo.cs" />
+    <Compile Include="Info\Generation\CSTAPICleaningDataInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTAPIErrorLogInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTAPIMoldCountInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTAPIMoldResetLogInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTCMSCarProcessInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTCPFELECHotStoveInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTEquipmentDeviceReleaseInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTEquipmentFAIInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTEquipmentSetupInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTEquipmentSetupWorkOrderInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTEquipmentToolReleaseInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTEquipmentWorktimeHistoryInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTEquipmentWorktimeInfo.Generation.cs" />
+    <Compile Include="Info\CSTUserWorkTimeInfo.cs" />
+    <Compile Include="Info\CSTWipAssemblyFileInfo.cs" />
+    <Compile Include="Info\CSTAPIEAPServerInfo.cs" />
+    <Compile Include="Info\CSTCMSTempTimeInfo.cs" />
+    <Compile Include="Info\CSTEQPWOAssignInfo.cs" />
+    <Compile Include="Info\CSTMMSIqcPassInfo.cs" />
+    <Compile Include="Info\CSTWIPCMMDataInfo.cs" />
+    <Compile Include="Info\CSTWIPCMMInfo.cs" />
+    <Compile Include="Info\CSTWIPDefectJudgementInfo.cs" />
+    <Compile Include="Info\CSTWMSDetailBAKInfo.cs" />
+    <Compile Include="Info\CSTWMSDetailInfo.cs" />
+    <Compile Include="Info\CSTMMSIqcInfo.cs" />
+    <Compile Include="Info\CSTWMSMastBAKInfo.cs" />
+    <Compile Include="Info\CSTWMSMastInfo.cs" />
+    <Compile Include="Info\CSTWipPPKInfo.cs" />
+    <Compile Include="Info\CSTWorkOrderLotInfo.cs" />
+    <Compile Include="Info\CSTWIPReserveCheckInInfo.cs" />
+    <Compile Include="Info\Generation\CSTAPICoolingDownTempInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTAPICPFSetLocationInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTEDCComponentInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTCMSTempTimeInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTCMSTempTimeLogInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTEQPWOAssignInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTEQPWOAssignLogInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTMMSIqcInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTMMSIqcInfoLog.Generation.cs" />
+    <Compile Include="Info\Generation\CSTMMSIqcPassInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTAPIEAPServerInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTPrcLineInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTPrcLineStationInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTPRCOperationMappingDataInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTPRCOperationMappingInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTSystemLoaderLogInfo.Generation.cs" />
+    <Compile Include="Info\CSTUserCurrentStatusInfo.cs" />
+    <Compile Include="Info\Generation\CSTToolDeviceDetailLogInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTToolDeviceDetailInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTToolDeviceLogInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTToolDeviceInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTToolIssueInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTToolLabelPrintLogInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTToolLifeInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTToolLifeLogInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTToolRepairInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTToolRepairLifeInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTToolReportInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTToolReportLogInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTToolTypeLifeLogInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTToolTypeLifeInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTToolTypePictureLogInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTToolTypePictureInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTToolUselogInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTUserChangeWorktimeInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTUserCurrentStatusInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTUserExceptWorktimeInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTUserWorkTimeHistoryInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTUserWorkTimeInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTWipAssemblyFileInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTWipAssemblyFileLogInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTWIPCMMDataInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTWIPCMMInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTWIPDefectJudgementInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTWipFQCDefectInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTWIPPackDataInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTWIPPackInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTWIPPackTempInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTWipPPKInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTWIPReserveCheckInInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTWIPReserveCheckInLogInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTWMSDetailBAKInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTWMSDetailInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTWMSMastBAKInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTWMSMastInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTWorkOrderLotInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTWPCWorkOrderBOMInfo.Generation.cs" />
+    <Compile Include="Info\Generation\CSTWPCWorkOrderRouteInfo.Generation.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RuleMessage\RuleMessage.csproj">
+      <Project>{963dec88-c28b-4b1f-b91c-39448a7048c3}</Project>
+      <Name>RuleMessage</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>$(SolutionDir)BuildAction\ReferenceBuild.bat $(SolutionDir) $(ProjectDir) $(ProjectName) $(TargetDir) $(TargetName) $(ConfigurationName) $(SolutionName)</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

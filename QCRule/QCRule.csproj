@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{212BAA87-8BBF-4A56-9615-86BF907FAE13}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CustomizeRule.QCRule</RootNamespace>
+    <AssemblyName>CustomizeRule.QCRule</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\..\Reference\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Ares.Cimes.IntelliService">
+      <HintPath>..\..\Reference\Ares.Cimes.IntelliService.dll</HintPath>
+    </Reference>
+    <Reference Include="Ares.Cimes.IntelliService.Data">
+      <HintPath>..\..\Reference\Ares.Cimes.IntelliService.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Ares.Cimes.IntelliService.DataSchema">
+      <HintPath>..\..\Reference\Ares.Cimes.IntelliService.DataSchema.dll</HintPath>
+    </Reference>
+    <Reference Include="Ares.Cimes.IntelliService.Web">
+      <HintPath>..\..\Reference\Ares.Cimes.IntelliService.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Ares.Cimes.SystemIntelliService">
+      <HintPath>..\..\Reference\Ares.Cimes.SystemIntelliService.dll</HintPath>
+    </Reference>
+    <Reference Include="Ares.Cimes.SystemIntelliService.QC, Version=5.0.16.1380, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Reference\Ares.Cimes.SystemIntelliService.QC.dll</HintPath>
+    </Reference>
+    <Reference Include="Ares.Cimes.SystemIntelliService.TMS">
+      <HintPath>..\..\Reference\Ares.Cimes.SystemIntelliService.TMS.dll</HintPath>
+    </Reference>
+    <Reference Include="Ares.Cimes.TextMessage">
+      <HintPath>..\..\Reference\Ares.Cimes.TextMessage.dll</HintPath>
+    </Reference>
+    <Reference Include="ciMes.CimesExtendManager">
+      <HintPath>..\..\Reference\ciMes.CimesExtendManager.dll</HintPath>
+    </Reference>
+    <Reference Include="ciMes.Utility">
+      <HintPath>..\..\Reference\ciMes.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="ciMes.Web.Common">
+      <HintPath>..\..\Reference\ciMes.Web.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ciMes.Web.Common.UserControl">
+      <HintPath>..\..\Reference\ciMes.Web.Common.UserControl.dll</HintPath>
+    </Reference>
+    <Reference Include="ciMesRule.UserControl">
+      <HintPath>..\..\Reference\ciMesRule.UserControl.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Reference\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="W028.aspx" />
+    <Content Include="W029.aspx" />
+    <Content Include="W040.aspx" />
+    <Content Include="W030.aspx" />
+    <Content Include="W031.aspx" />
+    <Content Include="W032.aspx" />
+    <Content Include="W041.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="W028.aspx.cs">
+      <DependentUpon>W028.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="W028.aspx.designer.cs">
+      <DependentUpon>W028.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="W029.aspx.cs">
+      <DependentUpon>W029.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="W029.aspx.designer.cs">
+      <DependentUpon>W029.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="W040.aspx.cs">
+      <DependentUpon>W040.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="W040.aspx.designer.cs">
+      <DependentUpon>W040.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="W030.aspx.cs">
+      <DependentUpon>W030.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="W030.aspx.designer.cs">
+      <DependentUpon>W030.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="W031.aspx.cs">
+      <DependentUpon>W031.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="W031.aspx.designer.cs">
+      <DependentUpon>W031.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="W032.aspx.cs">
+      <DependentUpon>W032.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="W032.aspx.designer.cs">
+      <DependentUpon>W032.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="W041.aspx.cs">
+      <DependentUpon>W041.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="W041.aspx.designer.cs">
+      <DependentUpon>W041.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CustomizeExtendManager\CustomizeExtendManager.csproj">
+      <Project>{4d6c4308-3458-4bcb-bcbb-53e680f80d4e}</Project>
+      <Name>CustomizeExtendManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CustomizeInfo\CustomizeInfo.csproj">
+      <Project>{c195dd99-9d2c-4db5-9a95-56fdad008f5d}</Project>
+      <Name>CustomizeInfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RuleMessage\RuleMessage.csproj">
+      <Project>{963dec88-c28b-4b1f-b91c-39448a7048c3}</Project>
+      <Name>RuleMessage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RuleUtility\RuleUtility.csproj">
+      <Project>{556414ce-3ea8-4780-b9b3-c99bfb1a5ddc}</Project>
+      <Name>RuleUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Web.Common.UserControl\Web.UserControl.csproj">
+      <Project>{a64ba43e-c840-43e0-ba11-cc2bc73a99d9}</Project>
+      <Name>Web.UserControl</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>11623</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:11623/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <PostBuildEvent>$(SolutionDir)BuildAction\FunctionBuild.bat $(SolutionDir) $(ProjectDir) $(ProjectName) $(TargetDir) $(TargetName) $(ConfigurationName) $(SolutionName)</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

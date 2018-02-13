@@ -1,0 +1,744 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="C00001" xml:space="preserve">
+    <value>Model: {0} Production Type: {1}, please enter the workpiece number!</value>
+  </data>
+  <data name="C00002" xml:space="preserve">
+    <value>The material lot quantity can not be less than workorder lot quantity</value>
+  </data>
+  <data name="C00003" xml:space="preserve">
+    <value>The total number of IQC completed does not exceed IQC quantity!</value>
+  </data>
+  <data name="C00004" xml:space="preserve">
+    <value>Carrier: {0} is not exist !</value>
+  </data>
+  <data name="C00005" xml:space="preserve">
+    <value>Carrier: {0} is not enable !</value>
+  </data>
+  <data name="C00006" xml:space="preserve">
+    <value>{0}: {1} state is not: {2}，con not used!</value>
+  </data>
+  <data name="C00010" xml:space="preserve">
+    <value>The total number of materials on the machine can not be greater than the {0} pen</value>
+  </data>
+  <data name="C00011" xml:space="preserve">
+    <value>{0} has been used!</value>
+  </data>
+  <data name="C00012" xml:space="preserve">
+    <value>A machine, a location can only correspond to a material number</value>
+  </data>
+  <data name="C00013" xml:space="preserve">
+    <value>There is no Watson batch number on the machine!</value>
+  </data>
+  <data name="C00014" xml:space="preserve">
+    <value>Machine batch number has been picking finished!</value>
+  </data>
+  <data name="C00015" xml:space="preserve">
+    <value>The batch number is not the same as the input material number!</value>
+  </data>
+  <data name="C00016" xml:space="preserve">
+    <value>Incoming serial number has been approved!</value>
+  </data>
+  <data name="C00017" xml:space="preserve">
+    <value>The bad ID number is not the same as the box number entered!</value>
+  </data>
+  <data name="C00018" xml:space="preserve">
+    <value>Choose reject need add defect information!</value>
+  </data>
+  <data name="C00019" xml:space="preserve">
+    <value>Product Type:{0}, {1} data not found!</value>
+  </data>
+  <data name="C00020" xml:space="preserve">
+    <value>The input box location is different from the lotlist location !</value>
+  </data>
+  <data name="C00021" xml:space="preserve">
+    <value>Washer lot is already in the Equipment and other location !</value>
+  </data>
+  <data name="C10001" xml:space="preserve">
+    <value>Lot : {0} Saved site: {1} Make an appointment for a scheduled job, follow the job guidelines</value>
+  </data>
+  <data name="C10002" xml:space="preserve">
+    <value>Site: {0}, no setting rule found, please confirm [Workstation Settings]</value>
+  </data>
+  <data name="C10003" xml:space="preserve">
+    <value>Status is {0}, not executable</value>
+  </data>
+  <data name="C10004" xml:space="preserve">
+    <value>The batch job is {0}, not for this function, please follow the job specification</value>
+  </data>
+  <data name="C10005" xml:space="preserve">
+    <value>Machine: {0}, not available in the machine range, please go to [Workstation Settings] to confirm the machine settings</value>
+  </data>
+  <data name="C10006" xml:space="preserve">
+    <value>Machine: {0} does not exist</value>
+  </data>
+  <data name="C10007" xml:space="preserve">
+    <value>Lot：{0} does not exist</value>
+  </data>
+  <data name="C10008" xml:space="preserve">
+    <value>Lot number: {0} no next work site, please confirm [process setting]</value>
+  </data>
+  <data name="C10009" xml:space="preserve">
+    <value>Serial number: {0} does not exist</value>
+  </data>
+  <data name="C10010" xml:space="preserve">
+    <value>Serial number {0} belongs to {1}, please confirm the correctness of the information!</value>
+  </data>
+  <data name="C10011" xml:space="preserve">
+    <value>Serial number: {0} already exists in bad list, please confirm the correctness of the information!</value>
+  </data>
+  <data name="C10012" xml:space="preserve">
+    <value>Please enter the production number!</value>
+  </data>
+  <data name="C10013" xml:space="preserve">
+    <value>Bad number can not be 0!</value>
+  </data>
+  <data name="C10014" xml:space="preserve">
+    <value>Can not find the station information, please go to the system data maintenance to increase the information, attributes: {0}</value>
+  </data>
+  <data name="C10015" xml:space="preserve">
+    <value>Bad number can not be greater than batch number!</value>
+  </data>
+  <data name="C10016" xml:space="preserve">
+    <value>Mold: {0} does not exist, please confirm the correctness of the data !!</value>
+  </data>
+  <data name="C10017" xml:space="preserve">
+    <value>Mold: {0} is disabled, and if you want to use it, go to "Accessory Maintenance"!</value>
+  </data>
+  <data name="C10018" xml:space="preserve">
+    <value>Mold storage for {0}, not in the Treasury, do not need to take !!</value>
+  </data>
+  <data name="C10019" xml:space="preserve">
+    <value>Mold state is {0}, please carry out down mold or clamp repair!</value>
+  </data>
+  <data name="C10020" xml:space="preserve">
+    <value>Mold status is {0}, this function can not be performed !!</value>
+  </data>
+  <data name="C10021" xml:space="preserve">
+    <value>Mold fixture storage for the {0}, not online side, do not return !!</value>
+  </data>
+  <data name="C10022" xml:space="preserve">
+    <value>Mold fixture state is {0}, can not perform this function !!</value>
+  </data>
+  <data name="C10023" xml:space="preserve">
+    <value>Mold fixture: {0} has been on the machine: {1}, can not be on the machine!</value>
+  </data>
+  <data name="C10024" xml:space="preserve">
+    <value>Mold fixture storage for the {0}, not yet received, not on the machine!</value>
+  </data>
+  <data name="C10025" xml:space="preserve">
+    <value>The machine: {0} is disabled. For use, please go to "Machine Data Maintenance".</value>
+  </data>
+  <data name="C10026" xml:space="preserve">
+    <value>The machine status is {0}, this function can not be performed !!</value>
+  </data>
+  <data name="C10027" xml:space="preserve">
+    <value>Mold Status: {0} does not exist !!</value>
+  </data>
+  <data name="C10028" xml:space="preserve">
+    <value>Web page does not set change status!</value>
+  </data>
+  <data name="C10029" xml:space="preserve">
+    <value>Mold fixture: {0} does not exist, please confirm the correctness of the data !!</value>
+  </data>
+  <data name="C10030" xml:space="preserve">
+    <value>Mold fixture: {0} has been disabled, for use, please go to "accessory data maintenance" enabled !!</value>
+  </data>
+  <data name="C10031" xml:space="preserve">
+    <value>Mold fixture: {0} not on the machine, do not have to machine!</value>
+  </data>
+  <data name="C10032" xml:space="preserve">
+    <value>Mold fixture state: {0} does not exist !!</value>
+  </data>
+  <data name="C10033" xml:space="preserve">
+    <value>Mold state is {0} without clipping!</value>
+  </data>
+  <data name="C10034" xml:space="preserve">
+    <value>Mold status is {0}, no mold work!</value>
+  </data>
+  <data name="C10035" xml:space="preserve">
+    <value>Mold storage is {0}, not in the Treasury, can not be down mold work !!</value>
+  </data>
+  <data name="C10036" xml:space="preserve">
+    <value>Device({0}) pack type is mix, max pack size({1}) must even!</value>
+  </data>
+  <data name="C10037" xml:space="preserve">
+    <value>Device({0}) pack type is mix, not find relative device({1}) infomation!</value>
+  </data>
+  <data name="C10038" xml:space="preserve">
+    <value>Device({0}) system attribute{1}:{2}with device({3})system attribute{4}:{5}must equal!</value>
+  </data>
+  <data name="C10039" xml:space="preserve">
+    <value>Device({0}) system attribute{1}:{2}must be{3}!</value>
+  </data>
+  <data name="C10040" xml:space="preserve">
+    <value>Material lot ({0}) in different lot，please input wolot!</value>
+  </data>
+  <data name="C10041" xml:space="preserve">
+    <value>Pack type is Standard only input lot device is({0})!</value>
+  </data>
+  <data name="C10042" xml:space="preserve">
+    <value>Pack type is Mix only input lot device is ({0},{1})!</value>
+  </data>
+  <data name="C10043" xml:space="preserve">
+    <value>Pack size({0}) must equal max size({1})!</value>
+  </data>
+  <data name="C10044" xml:space="preserve">
+    <value>Device pack size must relative device pack size:{0}quantity({1}),{2}Quantity({3})!</value>
+  </data>
+  <data name="C10045" xml:space="preserve">
+    <value>Carrier : {0} does not exist !!</value>
+  </data>
+  <data name="C10046" xml:space="preserve">
+    <value>Carrier : {0} no lot number is mounted !!</value>
+  </data>
+  <data name="C10047" xml:space="preserve">
+    <value>Item SN : {0} does not exist !!</value>
+  </data>
+  <data name="C10048" xml:space="preserve">
+    <value>Location: {0} No part number</value>
+  </data>
+  <data name="C10049" xml:space="preserve">
+    <value>Workpiece is finish center hole!</value>
+  </data>
+  <data name="C10050" xml:space="preserve">
+    <value>Route can't find wait judgment operation!</value>
+  </data>
+  <data name="C10051" xml:space="preserve">
+    <value>Work order: {0}, Equipment: {1} existing information, can not be added.</value>
+  </data>
+  <data name="C10052" xml:space="preserve">
+    <value>Work order: {0}, Equipment: {1} No data available, can not be {2}</value>
+  </data>
+  <data name="C10053" xml:space="preserve">
+    <value>Equipment: {0}, check without any inspection information!</value>
+  </data>
+  <data name="C10054" xml:space="preserve">
+    <value>Lot not in first operation</value>
+  </data>
+  <data name="C10055" xml:space="preserve">
+    <value>Lot is on autoline</value>
+  </data>
+  <data name="C10056" xml:space="preserve">
+    <value>This box number does not exist in the inventory table: {0}.</value>
+  </data>
+  <data name="C10057" xml:space="preserve">
+    <value>Box number: {0} repeat.</value>
+  </data>
+  <data name="C10058" xml:space="preserve">
+    <value>Work piece number: {0} does not belong to automatic line!</value>
+  </data>
+  <data name="C10059" xml:space="preserve">
+    <value>Equipment no inspection!</value>
+  </data>
+  <data name="C10060" xml:space="preserve">
+    <value>Lot no component!</value>
+  </data>
+  <data name="C10061" xml:space="preserve">
+    <value>Lot  component quantity more than one!</value>
+  </data>
+  <data name="C10062" xml:space="preserve">
+    <value>Production number: {0} check no test data!</value>
+  </data>
+  <data name="C10063" xml:space="preserve">
+    <value>Production number: {0} No machine can choose!</value>
+  </data>
+  <data name="C10064" xml:space="preserve">
+    <value>Production number: {0} No serial number can be selected!</value>
+  </data>
+  <data name="C10065" xml:space="preserve">
+    <value>Serial number: {0} no test data can be displayed!</value>
+  </data>
+  <data name="C10066" xml:space="preserve">
+    <value>Please enter the correct machine / serial number!</value>
+  </data>
+  <data name="C10067" xml:space="preserve">
+    <value>Web page does not set QCType!</value>
+  </data>
+  <data name="C10068" xml:space="preserve">
+    <value>Operation: {0} System property settings do not have an appointment!</value>
+  </data>
+  <data name="C10069" xml:space="preserve">
+    <value>PPK results choose OK, check the list can not check any information!</value>
+  </data>
+  <data name="C10070" xml:space="preserve">
+    <value>PPK results selected NG, check the list at least check a copy of the information!</value>
+  </data>
+  <data name="C10071" xml:space="preserve">
+    <value>Equipment: {0} {1} hole not on the material!</value>
+  </data>
+  <data name="C10072" xml:space="preserve">
+    <value>Toggle user permission failed (user: {0})!</value>
+  </data>
+  <data name="C10073" xml:space="preserve">
+    <value>Source path location: {0} </value>
+  </data>
+  <data name="C10074" xml:space="preserve">
+    <value>Target path location: {0} does not exist!</value>
+  </data>
+  <data name="C10075" xml:space="preserve">
+    <value>Equipment：{0}，location{1} washer data does not exist!</value>
+  </data>
+  <data name="C10076" xml:space="preserve">
+    <value>Workpiece:{0} must at OP1(Current Operation Is:{1})</value>
+  </data>
+  <data name="C10077" xml:space="preserve">
+    <value>Workpiece serial number: {0} must perform center hole measurement, but have not yet performed center hole measurement action!</value>
+  </data>
+  <data name="C10078" xml:space="preserve">
+    <value>Center hole measurement file: {0} does not exist!</value>
+  </data>
+  <data name="C10079" xml:space="preserve">
+    <value>Center hole measurement file: {0} file line number is less than {1}, format does not match, please check the file source!</value>
+  </data>
+  <data name="C10080" xml:space="preserve">
+    <value>Part number: {0} inspection exception, the workpiece must be discharged!</value>
+  </data>
+  <data name="C10081" xml:space="preserve">
+    <value>Workpiece number: {0} The result of the center hole measurement is NG, the workpiece must be discharged!</value>
+  </data>
+  <data name="C10082" xml:space="preserve">
+    <value>Workpiece serial number: {0} The assembly result is NG, the workpiece must be discharged!</value>
+  </data>
+  <data name="C10083" xml:space="preserve">
+    <value>User:{0} is on equipment {1}!</value>
+  </data>
+  <data name="C10084" xml:space="preserve">
+    <value>Lot({0}) is at operation({1}), not {2} !</value>
+  </data>
+  <data name="C10085" xml:space="preserve">
+    <value>Component({0}) must run center hole measurement！</value>
+  </data>
+  <data name="C10086" xml:space="preserve">
+    <value>Equipment({0}) can't find location({1}) file !</value>
+  </data>
+  <data name="C10087" xml:space="preserve">
+    <value>Can't  find user worktime data in equipment({0})!</value>
+  </data>
+  <data name="C10088" xml:space="preserve">
+    <value>Can't  find user({0}) worktime data in equipment({1}) and lot ({2})!</value>
+  </data>
+  <data name="C10089" xml:space="preserve">
+    <value>Can't find equipment({0}) and lot({1}) equipment worktime data !</value>
+  </data>
+  <data name="C10090" xml:space="preserve">
+    <value>Temperature must be digital type!</value>
+  </data>
+  <data name="C10091" xml:space="preserve">
+    <value>Lettering content: {0} must be equal16 yards!</value>
+  </data>
+  <data name="C10092" xml:space="preserve">
+    <value>Workpiece quantity({0}) to reach pack size({1}) !</value>
+  </data>
+  <data name="C10093" xml:space="preserve">
+    <value>Workpiece already in temporary please keyin TempWorkpiece !</value>
+  </data>
+  <data name="C10094" xml:space="preserve">
+    <value>Lot({0}) quantity:{1} more than equipment({2})location:{3} washer quantity:{4} !</value>
+  </data>
+  <data name="C10095" xml:space="preserve">
+    <value>Forging lot number: {0} already exists, can no longer be stored!</value>
+  </data>
+  <data name="C10096" xml:space="preserve">
+    <value>Can't  find user on work data in equipment({0}) and workplace({1})!</value>
+  </data>
+  <data name="C10097" xml:space="preserve">
+    <value>Line({0}) and workplace({1}) has user({2}) workorder({3}) worktime data！</value>
+  </data>
+  <data name="C10098" xml:space="preserve">
+    <value>Can't  find user start work data in equipment({0}) and workplace({1})!</value>
+  </data>
+  <data name="C10099" xml:space="preserve">
+    <value>EQP assembly results back: {0}, the content must be 1 or 2!</value>
+  </data>
+  <data name="C10100" xml:space="preserve">
+    <value>Serial number: {0} Verify that the master status is {1} and can not be executed!</value>
+  </data>
+  <data name="C10101" xml:space="preserve">
+    <value>Can not find the WOLot ({0}) and the corresponding workorder !</value>
+  </data>
+  <data name="C10102" xml:space="preserve">
+    <value>Workoder({0}) prodline not Auto can't use on auto line !</value>
+  </data>
+  <data name="C10103" xml:space="preserve">
+    <value>Can not find any machines, please confirm that the incoming line ({0}) and the system data settings ({1}) are correct!</value>
+  </data>
+  <data name="C10104" xml:space="preserve">
+    <value>Line({0}) has user({1}) workorder({2}) worktime data！</value>
+  </data>
+  <data name="C10105" xml:space="preserve">
+    <value>Tune equipment just accept two work order!</value>
+  </data>
+  <data name="C10106" xml:space="preserve">
+    <value>Equipmet({1}) has setup data !</value>
+  </data>
+  <data name="C10107" xml:space="preserve">
+    <value>No equipmet({1}) setup wo data !</value>
+  </data>
+  <data name="C10108" xml:space="preserve">
+    <value>No equipmet({1}) setup data !</value>
+  </data>
+  <data name="C10109" xml:space="preserve">
+    <value>No workon data !</value>
+  </data>
+  <data name="C10110" xml:space="preserve">
+    <value>Check number: {0} check the same BatchID!</value>
+  </data>
+  <data name="C10111" xml:space="preserve">
+    <value>Equipment: {0} No test data can be displayed!</value>
+  </data>
+  <data name="C10112" xml:space="preserve">
+    <value>Test results The number of masterpieces ({0}) is not the same as the number of checklists ({1})</value>
+  </data>
+  <data name="C10113" xml:space="preserve">
+    <value>Equipment({0}) and device:({1}) no ({2}) inspection data!</value>
+  </data>
+  <data name="C10114" xml:space="preserve">
+    <value>Equipment lot ({0}) is on inspetion can't run PQC !</value>
+  </data>
+  <data name="C10115" xml:space="preserve">
+    <value>Data already exists, please click on the data to modify!</value>
+  </data>
+  <data name="C10116" xml:space="preserve">
+    <value>Device({0}) and equipment ({1}) without any information, can not perform copy action!</value>
+  </data>
+  <data name="C10117" xml:space="preserve">
+    <value>Device ({0}) and equipment ({1}) data already exists, can not perform copy action!</value>
+  </data>
+  <data name="C10118" xml:space="preserve">
+    <value>PPK inspection of the workpiece is not in place, can not perform PPK decision!</value>
+  </data>
+  <data name="C10119" xml:space="preserve">
+    <value>File name: {0} already exists!</value>
+  </data>
+  <data name="C10120" xml:space="preserve">
+    <value>Vendor: {0} data already exists!</value>
+  </data>
+  <data name="C10121" xml:space="preserve">
+    <value>Tool type: {0} data already exists!</value>
+  </data>
+  <data name="C10122" xml:space="preserve">
+    <value>Please add a tool type information!</value>
+  </data>
+  <data name="C10123" xml:space="preserve">
+    <value>Mill name:{0} can't find head data !</value>
+  </data>
+  <data name="C10124" xml:space="preserve">
+    <value>Mill name:{0} location{1} can't take !</value>
+  </data>
+  <data name="C10125" xml:space="preserve">
+    <value>File name: {0} Uploaded!</value>
+  </data>
+  <data name="C10126" xml:space="preserve">
+    <value>Tool type: {0} You must upload inspection report data!</value>
+  </data>
+  <data name="C10127" xml:space="preserve">
+    <value>Tool parts: {0} not in the warehouse, can not be performed !!</value>
+  </data>
+  <data name="C10128" xml:space="preserve">
+    <value>Tool part: {0} is disabled. To use it, go to "Tool Assembly Feed"!</value>
+  </data>
+  <data name="C10129" xml:space="preserve">
+    <value>Tool component status is {0}, this function can not be performed !!</value>
+  </data>
+  <data name="C10130" xml:space="preserve">
+    <value>Tool parts: {0} No head setting data !!</value>
+  </data>
+  <data name="C10131" xml:space="preserve">
+    <value>Tool parts: {0} Not available, can not be on the machine!</value>
+  </data>
+  <data name="C10132" xml:space="preserve">
+    <value>Tool parts: {0} already on the machine: {1}, can not be on the other machine!</value>
+  </data>
+  <data name="C10133" xml:space="preserve">
+    <value>Tool parts: {0} no machine installation, no need to unload machine!</value>
+  </data>
+  <data name="C10134" xml:space="preserve">
+    <value>Tool parts: {0} not on the machine: {1}, can not be unloaded from this machine!</value>
+  </data>
+  <data name="C10135" xml:space="preserve">
+    <value>Tool parts: {0} has been on the machine: {1}, can not be removed group!</value>
+  </data>
+  <data name="C10136" xml:space="preserve">
+    <value>Tool parts have been all checked and can not be removed!</value>
+  </data>
+  <data name="C10137" xml:space="preserve">
+    <value>Work piece number: {0} No information found at MES_WIP_COMP!</value>
+  </data>
+  <data name="C10138" xml:space="preserve">
+    <value>Tool parts: {0} are on the machine: {1}, unable to return tool parts to warehouse!</value>
+  </data>
+  <data name="C10139" xml:space="preserve">
+    <value>Can't find user shoft data !</value>
+  </data>
+  <data name="C10140" xml:space="preserve">
+    <value>Can't find equipment{0} and device{1} tool device data !</value>
+  </data>
+  <data name="C10141" xml:space="preserve">
+    <value>Equipment({0}) and device({1}) tooltype({2}) eqp use tool quantity must be:{3} !</value>
+  </data>
+  <data name="C10142" xml:space="preserve">
+    <value>Can't find tool verifiy data !</value>
+  </data>
+  <data name="C10143" xml:space="preserve">
+    <value>Except user({0}) has except data please excute except finish !</value>
+  </data>
+  <data name="C10144" xml:space="preserve">
+    <value>Except user({0}) no except data !</value>
+  </data>
+  <data name="C10145" xml:space="preserve">
+    <value>Equipment: {0} No information on material number {1}!</value>
+  </data>
+  <data name="C10146" xml:space="preserve">
+    <value>Work part number ({0}) [PROCESS_EQUIP] No information!</value>
+  </data>
+  <data name="C10147" xml:space="preserve">
+    <value>Equipment: {0} no tool on the machine information !!</value>
+  </data>
+  <data name="C10148" xml:space="preserve">
+    <value>Tool parts: {0} not on the list!</value>
+  </data>
+  <data name="C10149" xml:space="preserve">
+    <value>Tooling component status: {0} does not exist, please go to Accessories Status Maintenance to add this status !!</value>
+  </data>
+  <data name="C10150" xml:space="preserve">
+    <value>The format must be a positive integer separated by commas (for example: 1,2,3) !!</value>
+  </data>
+  <data name="C10151" xml:space="preserve">
+    <value>Tool type: {0}, number of face ({1}) is set incorrectly, please go to tool type maintenance and modify this number !!</value>
+  </data>
+  <data name="C10152" xml:space="preserve">
+    <value>Tooling component: {0} is already on the machine ({1}), please execute the tool off!</value>
+  </data>
+  <data name="C10153" xml:space="preserve">
+    <value>Tool components: {0} Only one face, can not replace the face!</value>
+  </data>
+  <data name="C10154" xml:space="preserve">
+    <value>This equipment + device has set the data, if you want to reset, please delete and then add the setting data !!</value>
+  </data>
+  <data name="C10155" xml:space="preserve">
+    <value>Can't find current shift data please confirm systemdata setting where class is shift !</value>
+  </data>
+  <data name="C10156" xml:space="preserve">
+    <value>Shift{0} user can't work on Shift{0} !</value>
+  </data>
+  <data name="C10157" xml:space="preserve">
+    <value>Can't find workuser{0} and lot {1} worktime data !</value>
+  </data>
+  <data name="C10158" xml:space="preserve">
+    <value>Tool life setting page, please add a data!</value>
+  </data>
+  <data name="C10159" xml:space="preserve">
+    <value>The scheduled date of return must be greater than or equal to {0}!</value>
+  </data>
+  <data name="C10160" xml:space="preserve">
+    <value>Lot({0}) is still work on !</value>
+  </data>
+  <data name="C10161" xml:space="preserve">
+    <value>Lot finish quantity {0} is greater or equal lot quantity {1} !</value>
+  </data>
+  <data name="C10162" xml:space="preserve">
+    <value>The latest piece of Component data ({0}), CPFSN is blank and can not get CPF_SN!</value>
+  </data>
+  <data name="C10163" xml:space="preserve">
+    <value>The latest piece of Component data ({0}), CPFN ({1}) is not longer than four yards, can not get CPF_SN!</value>
+  </data>
+  <data name="C10164" xml:space="preserve">
+    <value>The latest piece of Component data ({0}), CPFN ({1}) is not the first two digits, you can not get CPF_SN!</value>
+  </data>
+  <data name="C10165" xml:space="preserve">
+    <value>[CST_CMS_CAR_PROCESS] Check trolley can be used!</value>
+  </data>
+  <data name="C10166" xml:space="preserve">
+    <value>Please use worker material requisition and start lot rule !</value>
+  </data>
+  <data name="C10167" xml:space="preserve">
+    <value>Please use rework worker material requisition and start lot rule !</value>
+  </data>
+  <data name="C10168" xml:space="preserve">
+    <value>Device name is different with temp packing !</value>
+  </data>
+  <data name="C10169" xml:space="preserve">
+    <value>The number of tools must be equal to 1 before executing the upload inspection report!</value>
+  </data>
+  <data name="C10170" xml:space="preserve">
+    <value>Change back to factory date must be greater than or equal to {0}!</value>
+  </data>
+  <data name="C10171" xml:space="preserve">
+    <value>Equipment({0}) and device ({1}) no tool verification!</value>
+  </data>
+  <data name="C10172" xml:space="preserve">
+    <value>User{4} : Work on date ({0}) and shift {1} error current date ({2}) and shift({3}), please retry wrok on!</value>
+  </data>
+  <data name="C10173" xml:space="preserve">
+    <value>Can't find equipment({0}) and workorder({1}) equipment worktime data !</value>
+  </data>
+  <data name="C10174" xml:space="preserve">
+    <value>RUNID Of INVLOT({0}) Must Be The Same!(LotID:{1};RUNID:{2}；RUNID Of Create Lot:{3})</value>
+  </data>
+  <data name="C10175" xml:space="preserve">
+    <value>Lot ({0}) has been waiting for the station, can't execute this rule !</value>
+  </data>
+  <data name="C10176" xml:space="preserve">
+    <value>Can't find lot({0}) worktime data !</value>
+  </data>
+  <data name="C10177" xml:space="preserve">
+    <value>Widget ({0}) and forging / storage lot number ({1}) No data found!</value>
+  </data>
+  <data name="C10178" xml:space="preserve">
+    <value>Incoming batch number ({0}) No data found!</value>
+  </data>
+  <data name="C10179" xml:space="preserve">
+    <value>The incoming batch number ({0}) corresponds to the heat number ({1}) No data found!</value>
+  </data>
+  <data name="C10180" xml:space="preserve">
+    <value>Forging / storage batch number: {0} Check the corresponding workpiece data!</value>
+  </data>
+  <data name="C10181" xml:space="preserve">
+    <value>User({0}) has except data can't workon !</value>
+  </data>
+  <data name="C10182" xml:space="preserve">
+    <value>Only files in .jpg /.jpeg/.png/.bmp are accepted!</value>
+  </data>
+  <data name="C10183" xml:space="preserve">
+    <value>PLC workpiece point is empty!</value>
+  </data>
+  <data name="C10184" xml:space="preserve">
+    <value>Check IQC incoming information (CST_MMS_IQC_INFO no information)!</value>
+  </data>
+  <data name="C10185" xml:space="preserve">
+    <value>Equipment: {0} has been on the {1} material serial number, can no longer perform loading action!</value>
+  </data>
+  <data name="C10186" xml:space="preserve">
+    <value>Equipment: {0} has exceeded the set number of work orders {1}!</value>
+  </data>
+  <data name="C10187" xml:space="preserve">
+    <value>Check no reason to send judgment!</value>
+  </data>
+  <data name="C10188" xml:space="preserve">
+    <value>Can't find CPF default QCType!</value>
+  </data>
+  <data name="C10189" xml:space="preserve">
+    <value>Lot {0} status must be WaitMerge to perform this function!</value>
+  </data>
+  <data name="C10190" xml:space="preserve">
+    <value>Equipment: {0} Check no outbound records!</value>
+  </data>
+</root>

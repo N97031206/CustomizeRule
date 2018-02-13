@@ -1,0 +1,834 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ChineseTraditional" xml:space="preserve">
+    <value>中文(繁体)</value>
+  </data>
+  <data name="CorpNO" xml:space="preserve">
+    <value>执行环境</value>
+  </data>
+  <data name="DispatchLot" xml:space="preserve">
+    <value>作业分派</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>英文</value>
+  </data>
+  <data name="EnterLot" xml:space="preserve">
+    <value>请输入条码</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>登入</value>
+  </data>
+  <data name="LogOut" xml:space="preserve">
+    <value>退出登录</value>
+  </data>
+  <data name="MessageTracking" xml:space="preserve">
+    <value>讯息追踪</value>
+  </data>
+  <data name="ModifyPassword" xml:space="preserve">
+    <value>修改密码</value>
+  </data>
+  <data name="PersonalCenter" xml:space="preserve">
+    <value>个人中心</value>
+  </data>
+  <data name="SimplifiedChinese" xml:space="preserve">
+    <value>中文(简体)</value>
+  </data>
+  <data name="VersionCode" xml:space="preserve">
+    <value>版本号</value>
+  </data>
+  <data name="MyFavourite" xml:space="preserve">
+    <value>我的最爱</value>
+  </data>
+  <data name="ProgramListName" xml:space="preserve">
+    <value>程式列表</value>
+  </data>
+  <data name="QuickCheck" xml:space="preserve">
+    <value>速查</value>
+  </data>
+  <data name="ProductionNumber" xml:space="preserve">
+    <value>DMC/工单号</value>
+  </data>
+  <data name="RuncardLot" xml:space="preserve">
+    <value>工单号码</value>
+  </data>
+  <data name="WorkpieceLot" xml:space="preserve">
+    <value>工件批号</value>
+  </data>
+  <data name="WorkpieceSerialNumber" xml:space="preserve">
+    <value>工件序号</value>
+  </data>
+  <data name="WOLot" xml:space="preserve">
+    <value>小工单号</value>
+  </data>
+  <data name="NGReason" xml:space="preserve">
+    <value>不良品原因</value>
+  </data>
+  <data name="RuncardLotList" xml:space="preserve">
+    <value>小工单清单</value>
+  </data>
+  <data name="CheckInLotCount" xml:space="preserve">
+    <value>进站批数</value>
+  </data>
+  <data name="BoxCount" xml:space="preserve">
+    <value>箱数</value>
+  </data>
+  <data name="BoxNO" xml:space="preserve">
+    <value>箱号</value>
+  </data>
+  <data name="BoxTotalQuantity" xml:space="preserve">
+    <value>总数量</value>
+  </data>
+  <data name="InventoryNO" xml:space="preserve">
+    <value>入库单号</value>
+  </data>
+  <data name="Equip" xml:space="preserve">
+    <value>机台</value>
+  </data>
+  <data name="LotCheckInLot" xml:space="preserve">
+    <value>小工单号</value>
+  </data>
+  <data name="MaterialDesc" xml:space="preserve">
+    <value>料号描述</value>
+  </data>
+  <data name="MaterialId" xml:space="preserve">
+    <value>料号</value>
+  </data>
+  <data name="OperationStation" xml:space="preserve">
+    <value>工作站</value>
+  </data>
+  <data name="Qty" xml:space="preserve">
+    <value>数量</value>
+  </data>
+  <data name="Route" xml:space="preserve">
+    <value>流程</value>
+  </data>
+  <data name="ComponentId" xml:space="preserve">
+    <value>生产编号</value>
+  </data>
+  <data name="DefectDesc" xml:space="preserve">
+    <value>不良说明</value>
+  </data>
+  <data name="DefectQty" xml:space="preserve">
+    <value>不良数量</value>
+  </data>
+  <data name="DefectReason" xml:space="preserve">
+    <value>不良原因</value>
+  </data>
+  <data name="NGReasonDesc" xml:space="preserve">
+    <value>不良说明</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>新增</value>
+  </data>
+  <data name="BadProduct" xml:space="preserve">
+    <value>不良品</value>
+  </data>
+  <data name="ChangeLine" xml:space="preserve">
+    <value>换线线别</value>
+  </data>
+  <data name="ChangeWO" xml:space="preserve">
+    <value>换线工单</value>
+  </data>
+  <data name="CheckOutDescr" xml:space="preserve">
+    <value>下机说明</value>
+  </data>
+  <data name="CheckOutReasonCode" xml:space="preserve">
+    <value>下机原因码</value>
+  </data>
+  <data name="Device" xml:space="preserve">
+    <value>型号</value>
+  </data>
+  <data name="ToolDescription" xml:space="preserve">
+    <value>模具说明</value>
+  </data>
+  <data name="ToolInfo" xml:space="preserve">
+    <value>模具资讯</value>
+  </data>
+  <data name="ToolModeDescription" xml:space="preserve">
+    <value>模治具说明</value>
+  </data>
+  <data name="ToolModeInfo" xml:space="preserve">
+    <value>模治具资讯</value>
+  </data>
+  <data name="ToolModeName" xml:space="preserve">
+    <value>模治具编号</value>
+  </data>
+  <data name="ToolModeType" xml:space="preserve">
+    <value>模治具类型</value>
+  </data>
+  <data name="ToolName" xml:space="preserve">
+    <value>模具编号</value>
+  </data>
+  <data name="ToolType" xml:space="preserve">
+    <value>模具类型</value>
+  </data>
+  <data name="WorkOrder" xml:space="preserve">
+    <value>工单编号</value>
+  </data>
+  <data name="MaterialLot" xml:space="preserve">
+    <value>锻造批号</value>
+  </data>
+  <data name="PickingQuantity" xml:space="preserve">
+    <value>领料数量</value>
+  </data>
+  <data name="MaterialLotList" xml:space="preserve">
+    <value>锻造批号清单</value>
+  </data>
+  <data name="SN" xml:space="preserve">
+    <value>序号</value>
+  </data>
+  <data name="MaterialQuantity" xml:space="preserve">
+    <value>发料数量</value>
+  </data>
+  <data name="Mix" xml:space="preserve">
+    <value>左右手</value>
+  </data>
+  <data name="Standaed" xml:space="preserve">
+    <value>单手</value>
+  </data>
+  <data name="DefectInv" xml:space="preserve">
+    <value>不良品入库</value>
+  </data>
+  <data name="Goods" xml:space="preserve">
+    <value>良品</value>
+  </data>
+  <data name="ItemSN" xml:space="preserve">
+    <value>工件序号</value>
+  </data>
+  <data name="JudgeDefect" xml:space="preserve">
+    <value>送待判原因</value>
+  </data>
+  <data name="JudgeReason" xml:space="preserve">
+    <value>判定原因</value>
+  </data>
+  <data name="JudgeResult" xml:space="preserve">
+    <value>判定结果</value>
+  </data>
+  <data name="Repair" xml:space="preserve">
+    <value>维修</value>
+  </data>
+  <data name="ScrapInv" xml:space="preserve">
+    <value>报废入库</value>
+  </data>
+  <data name="JudgeDescr" xml:space="preserve">
+    <value>判定說明</value>
+  </data>
+  <data name="FailInfo" xml:space="preserve">
+    <value>不良品资讯</value>
+  </data>
+  <data name="IQCLot" xml:space="preserve">
+    <value>来料批号</value>
+  </data>
+  <data name="IQCRunID" xml:space="preserve">
+    <value>来料炉号</value>
+  </data>
+  <data name="IQCSN" xml:space="preserve">
+    <value>来料序号</value>
+  </data>
+  <data name="IQCTime" xml:space="preserve">
+    <value>进料日期</value>
+  </data>
+  <data name="CheckInInfo" xml:space="preserve">
+    <value>进站资讯</value>
+  </data>
+  <data name="ProductionLot" xml:space="preserve">
+    <value>生产批号</value>
+  </data>
+  <data name="RepairInfo" xml:space="preserve">
+    <value>维修资讯</value>
+  </data>
+  <data name="RepairNG" xml:space="preserve">
+    <value>NG</value>
+  </data>
+  <data name="RepairOK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="RepairReasonCode" xml:space="preserve">
+    <value>维修原因</value>
+  </data>
+  <data name="RepairResult" xml:space="preserve">
+    <value>维修结果</value>
+  </data>
+  <data name="DeviceInfo" xml:space="preserve">
+    <value>料号资讯</value>
+  </data>
+  <data name="MaxPackSize" xml:space="preserve">
+    <value>满箱数量</value>
+  </data>
+  <data name="NoControl" xml:space="preserve">
+    <value>不卡控</value>
+  </data>
+  <data name="PackType" xml:space="preserve">
+    <value>包装方式</value>
+  </data>
+  <data name="RelativeDevice" xml:space="preserve">
+    <value>对应料号</value>
+  </data>
+  <data name="Workpiece" xml:space="preserve">
+    <value>工件</value>
+  </data>
+  <data name="WorkpieceList" xml:space="preserve">
+    <value>工件清单</value>
+  </data>
+  <data name="WorkpieceNo" xml:space="preserve">
+    <value>工件编号</value>
+  </data>
+  <data name="ComponentInfo" xml:space="preserve">
+    <value>工件清单</value>
+  </data>
+  <data name="PackInfo" xml:space="preserve">
+    <value>包装资讯</value>
+  </data>
+  <data name="AddMaterialQuantity" xml:space="preserve">
+    <value>上料数量</value>
+  </data>
+  <data name="RemoveMaterialEquipment" xml:space="preserve">
+    <value>下料机台</value>
+  </data>
+  <data name="RemoveMaterialQuantity" xml:space="preserve">
+    <value>下料数量</value>
+  </data>
+  <data name="EDCInfo" xml:space="preserve">
+    <value>量测资讯</value>
+  </data>
+  <data name="WorkpieceInfo" xml:space="preserve">
+    <value>工件资讯</value>
+  </data>
+  <data name="ScrapInfo" xml:space="preserve">
+    <value>报废资讯</value>
+  </data>
+  <data name="ScrapLotCount" xml:space="preserve">
+    <value>报废批数</value>
+  </data>
+  <data name="ScrapNo" xml:space="preserve">
+    <value>MES报废单号</value>
+  </data>
+  <data name="ScrapQuantity" xml:space="preserve">
+    <value>报废数量</value>
+  </data>
+  <data name="DefectInfo" xml:space="preserve">
+    <value>不良品资讯</value>
+  </data>
+  <data name="DefectList" xml:space="preserve">
+    <value>不良清单</value>
+  </data>
+  <data name="DefectLotCount" xml:space="preserve">
+    <value>不良批数</value>
+  </data>
+  <data name="DefectNo" xml:space="preserve">
+    <value>MES不良单号</value>
+  </data>
+  <data name="DefectQuantity" xml:space="preserve">
+    <value>不良数量</value>
+  </data>
+  <data name="Other" xml:space="preserve">
+    <value>其他</value>
+  </data>
+  <data name="Purchase" xml:space="preserve">
+    <value>外购料</value>
+  </data>
+  <data name="NoDefectData" xml:space="preserve">
+    <value>没有不良资料</value>
+  </data>
+  <data name="NoScrapData" xml:space="preserve">
+    <value>没有报废资料</value>
+  </data>
+  <data name="ProductionMode" xml:space="preserve">
+    <value>生产模式</value>
+  </data>
+  <data name="CarrierNo" xml:space="preserve">
+    <value>台车编号</value>
+  </data>
+  <data name="EquipInfo" xml:space="preserve">
+    <value>机台资讯</value>
+  </data>
+  <data name="QCList" xml:space="preserve">
+    <value>检验清单</value>
+  </data>
+  <data name="Reject" xml:space="preserve">
+    <value>退回</value>
+  </data>
+  <data name="WaitQC" xml:space="preserve">
+    <value>待检验</value>
+  </data>
+  <data name="SkipInspection" xml:space="preserve">
+    <value>不须检验</value>
+  </data>
+  <data name="CabinetNumber" xml:space="preserve">
+    <value>柜号</value>
+  </data>
+  <data name="ShippingNumber" xml:space="preserve">
+    <value>出货单号</value>
+  </data>
+  <data name="DecisionMethod" xml:space="preserve">
+    <value>判定作业</value>
+  </data>
+  <data name="InspectionData" xml:space="preserve">
+    <value>检验资料</value>
+  </data>
+  <data name="ProductionInfo" xml:space="preserve">
+    <value>工件批号</value>
+  </data>
+  <data name="WorkOrderLot" xml:space="preserve">
+    <value>小工单号</value>
+  </data>
+  <data name="BoxNoList" xml:space="preserve">
+    <value>箱号清单</value>
+  </data>
+  <data name="Inspector" xml:space="preserve">
+    <value>检验人员</value>
+  </data>
+  <data name="EquipOrCompLot" xml:space="preserve">
+    <value>机台/序号</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>说明</value>
+  </data>
+  <data name="ReasonCode" xml:space="preserve">
+    <value>原因碼</value>
+  </data>
+  <data name="PPKResult" xml:space="preserve">
+    <value>PPK结果</value>
+  </data>
+  <data name="NGSelet" xml:space="preserve">
+    <value>NG勾選</value>
+  </data>
+  <data name="WasherMaterialLot" xml:space="preserve">
+    <value>华司批号</value>
+  </data>
+  <data name="RemainingQuantity" xml:space="preserve">
+    <value>剩余数量</value>
+  </data>
+  <data name="DefectLocation" xml:space="preserve">
+    <value>不良位置</value>
+  </data>
+  <data name="FailReasonCode" xml:space="preserve">
+    <value>不良原因码</value>
+  </data>
+  <data name="DefectDescription" xml:space="preserve">
+    <value>不良说明</value>
+  </data>
+  <data name="DefectParts" xml:space="preserve">
+    <value>不良部位</value>
+  </data>
+  <data name="OldWasherMaterialLot" xml:space="preserve">
+    <value>旧华司批号</value>
+  </data>
+  <data name="LotCheckInInfo" xml:space="preserve">
+    <value>出站资讯</value>
+  </data>
+  <data name="Model" xml:space="preserve">
+    <value>型号</value>
+  </data>
+  <data name="TempWorkpiece" xml:space="preserve">
+    <value>暂存工件</value>
+  </data>
+  <data name="eqp_complot_lot" xml:space="preserve">
+    <value>机台/工件序号/工单批号</value>
+  </data>
+  <data name="Actual" xml:space="preserve">
+    <value>实际值</value>
+  </data>
+  <data name="Characteristic" xml:space="preserve">
+    <value>特性参数</value>
+  </data>
+  <data name="Deviation" xml:space="preserve">
+    <value>标准差</value>
+  </data>
+  <data name="Lower" xml:space="preserve">
+    <value>下限值</value>
+  </data>
+  <data name="Nominal" xml:space="preserve">
+    <value>参考值</value>
+  </data>
+  <data name="Upper" xml:space="preserve">
+    <value>上限值</value>
+  </data>
+  <data name="OPPostion" xml:space="preserve">
+    <value>人员工位</value>
+  </data>
+  <data name="UserQuantity" xml:space="preserve">
+    <value>人数</value>
+  </data>
+  <data name="WorkPosition" xml:space="preserve">
+    <value>工位</value>
+  </data>
+  <data name="DefectID" xml:space="preserve">
+    <value>不良工件</value>
+  </data>
+  <data name="WOLotTemplate" xml:space="preserve">
+    <value>小工单清单</value>
+  </data>
+  <data name="AllPrint" xml:space="preserve">
+    <value>全部列印</value>
+  </data>
+  <data name="Line" xml:space="preserve">
+    <value>线别</value>
+  </data>
+  <data name="HaveMergeQty" xml:space="preserve">
+    <value>已合并数量</value>
+  </data>
+  <data name="MergeQty" xml:space="preserve">
+    <value>可合并数量</value>
+  </data>
+  <data name="NotMergeQty" xml:space="preserve">
+    <value>不可合并数量</value>
+  </data>
+  <data name="WOQty" xml:space="preserve">
+    <value>小工单数量</value>
+  </data>
+  <data name="MergeSN" xml:space="preserve">
+    <value>可合并序号</value>
+  </data>
+  <data name="NotMergeSN" xml:space="preserve">
+    <value>不可合并序号</value>
+  </data>
+  <data name="PQCResult" xml:space="preserve">
+    <value>巡检结果</value>
+  </data>
+  <data name="FAICount" xml:space="preserve">
+    <value>首检次数</value>
+  </data>
+  <data name="FAIType" xml:space="preserve">
+    <value>首检方式</value>
+  </data>
+  <data name="SetupReason" xml:space="preserve">
+    <value>调机原因</value>
+  </data>
+  <data name="EquipmentSetup" xml:space="preserve">
+    <value>机台调整</value>
+  </data>
+  <data name="WorkOn" xml:space="preserve">
+    <value>上工</value>
+  </data>
+  <data name="FileUpload" xml:space="preserve">
+    <value>上传图面</value>
+  </data>
+  <data name="ToolTypeLife" xml:space="preserve">
+    <value>刀寿设定</value>
+  </data>
+  <data name="Supplier" xml:space="preserve">
+    <value>供应商</value>
+  </data>
+  <data name="ToolLifeCount" xml:space="preserve">
+    <value>刀寿次数</value>
+  </data>
+  <data name="InspectionQuery" xml:space="preserve">
+    <value>检验资料查询</value>
+  </data>
+  <data name="PictureQuery" xml:space="preserve">
+    <value>图面查询</value>
+  </data>
+  <data name="InspectionReport" xml:space="preserve">
+    <value>检验资料</value>
+  </data>
+  <data name="ToolTypes" xml:space="preserve">
+    <value>刀具类别</value>
+  </data>
+  <data name="ToolTypeImage" xml:space="preserve">
+    <value>刀具类型图面</value>
+  </data>
+  <data name="SourceInfo" xml:space="preserve">
+    <value>来源资料</value>
+  </data>
+  <data name="TargetInfo" xml:space="preserve">
+    <value>设定资料</value>
+  </data>
+  <data name="Identity" xml:space="preserve">
+    <value>身分</value>
+  </data>
+  <data name="MillHeader" xml:space="preserve">
+    <value>刀头</value>
+  </data>
+  <data name="MillLife" xml:space="preserve">
+    <value>刀寿</value>
+  </data>
+  <data name="MillList" xml:space="preserve">
+    <value>刀具清单</value>
+  </data>
+  <data name="MillName" xml:space="preserve">
+    <value>刀具零组件</value>
+  </data>
+  <data name="TakeBaseInfo" xml:space="preserve">
+    <value>领用资讯</value>
+  </data>
+  <data name="TakeDate" xml:space="preserve">
+    <value>领用日期</value>
+  </data>
+  <data name="TakeEquipment" xml:space="preserve">
+    <value>领用机台</value>
+  </data>
+  <data name="TakeQuantity" xml:space="preserve">
+    <value>领用数量</value>
+  </data>
+  <data name="TakeReason" xml:space="preserve">
+    <value>领用原因</value>
+  </data>
+  <data name="TakeUserName" xml:space="preserve">
+    <value>领用人员</value>
+  </data>
+  <data name="ToolTypeSpecification" xml:space="preserve">
+    <value>品名规格</value>
+  </data>
+  <data name="Units" xml:space="preserve">
+    <value>单位别</value>
+  </data>
+  <data name="PurchasingProduction" xml:space="preserve">
+    <value>采购产编</value>
+  </data>
+  <data name="ToolStatus" xml:space="preserve">
+    <value>刀况</value>
+  </data>
+  <data name="ScrapReason" xml:space="preserve">
+    <value>报废原因</value>
+  </data>
+  <data name="ToolParts" xml:space="preserve">
+    <value>刀具零组件</value>
+  </data>
+  <data name="ToolPartsInfo" xml:space="preserve">
+    <value>刀具零组件资讯</value>
+  </data>
+  <data name="ChangeLife" xml:space="preserve">
+    <value>变更刀寿次数</value>
+  </data>
+  <data name="Head" xml:space="preserve">
+    <value>刀面序号</value>
+  </data>
+  <data name="Life" xml:space="preserve">
+    <value>设定刀寿</value>
+  </data>
+  <data name="UseCount" xml:space="preserve">
+    <value>目前使用次数</value>
+  </data>
+  <data name="MainHead" xml:space="preserve">
+    <value>主刀面</value>
+  </data>
+  <data name="Auto" xml:space="preserve">
+    <value>自动线</value>
+  </data>
+  <data name="Manual" xml:space="preserve">
+    <value>手动线</value>
+  </data>
+  <data name="MillType" xml:space="preserve">
+    <value>刀具类别</value>
+  </data>
+  <data name="NeedQty" xml:space="preserve">
+    <value>应领数量</value>
+  </data>
+  <data name="UseQty" xml:space="preserve">
+    <value>领用数量</value>
+  </data>
+  <data name="VerifiyInfo" xml:space="preserve">
+    <value>验证资讯</value>
+  </data>
+  <data name="ToolVerifiy" xml:space="preserve">
+    <value>刀具验证</value>
+  </data>
+  <data name="ExceptUser" xml:space="preserve">
+    <value>除外人员</value>
+  </data>
+  <data name="WorkTime" xml:space="preserve">
+    <value>上工时间</value>
+  </data>
+  <data name="ExceptEuipmet" xml:space="preserve">
+    <value>除外机台</value>
+  </data>
+  <data name="ExceptTime" xml:space="preserve">
+    <value>除外时间</value>
+  </data>
+  <data name="LossItemSN" xml:space="preserve">
+    <value>号码排除</value>
+  </data>
+  <data name="MillNumber" xml:space="preserve">
+    <value>刀具编号</value>
+  </data>
+  <data name="MillTypes" xml:space="preserve">
+    <value>刀具类型</value>
+  </data>
+  <data name="SplitSelect" xml:space="preserve">
+    <value>勾选拆离</value>
+  </data>
+  <data name="BackDate" xml:space="preserve">
+    <value>预定回厂日</value>
+  </data>
+  <data name="FileLink" xml:space="preserve">
+    <value>档案连结</value>
+  </data>
+  <data name="WOInfo" xml:space="preserve">
+    <value>工单资讯</value>
+  </data>
+  <data name="InspectionDataFaceN" xml:space="preserve">
+    <value>检验资料(反面)</value>
+  </data>
+  <data name="InspectionDataFaceP" xml:space="preserve">
+    <value>检验资料(正面)</value>
+  </data>
+  <data name="UnPackingInventoryLot" xml:space="preserve">
+    <value>拆包入库批号</value>
+  </data>
+  <data name="InSpec" xml:space="preserve">
+    <value>判定结果</value>
+  </data>
+  <data name="IssueLot" xml:space="preserve">
+    <value>发料批号</value>
+  </data>
+  <data name="ToolQty" xml:space="preserve">
+    <value>刀具數量</value>
+  </data>
+  <data name="RepairPart" xml:space="preserve">
+    <value>维修部位</value>
+  </data>
+  <data name="ChangeBackDate" xml:space="preserve">
+    <value>变更回厂日</value>
+  </data>
+  <data name="SearchCondition" xml:space="preserve">
+    <value>查询条件</value>
+  </data>
+  <data name="SearchData" xml:space="preserve">
+    <value>查询信息</value>
+  </data>
+  <data name="MaterialLotAndInvLot" xml:space="preserve">
+    <value>鍛造/入庫批號</value>
+  </data>
+  <data name="PutPoint" xml:space="preserve">
+    <value>投入点</value>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>预览档案</value>
+  </data>
+  <data name="BushMaterialNo" xml:space="preserve">
+    <value>华司料号</value>
+  </data>
+  <data name="InspectionType" xml:space="preserve">
+    <value>检验方式</value>
+  </data>
+  <data name="IndependentInspection" xml:space="preserve">
+    <value>自主检资料</value>
+  </data>
+  <data name="CenterHoleData" xml:space="preserve">
+    <value>中心孔资料</value>
+  </data>
+  <data name="FileName" xml:space="preserve">
+    <value>档案名称</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>姓名</value>
+  </data>
+</root>

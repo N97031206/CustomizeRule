@@ -1,0 +1,852 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="C00001" xml:space="preserve">
+    <value>型號:{0} 生產型態: {1} ，請輸入工件序號 !</value>
+  </data>
+  <data name="C00002" xml:space="preserve">
+    <value>鍛造批號的數量不可小於發料數量!!</value>
+  </data>
+  <data name="C00003" xml:space="preserve">
+    <value>IQC 完成的總數量不得超過IQC 數量!</value>
+  </data>
+  <data name="C00004" xml:space="preserve">
+    <value>台車編號: {0} 不存在!</value>
+  </data>
+  <data name="C00005" xml:space="preserve">
+    <value>台車: {0} 尚未啟用!</value>
+  </data>
+  <data name="C00006" xml:space="preserve">
+    <value>{0}: {1} 狀態不為: {2}，不可使用!</value>
+  </data>
+  <data name="C10001" xml:space="preserve">
+    <value>批號：{0}已進行站點：{1}預約進站作業，請遵循作業規範</value>
+  </data>
+  <data name="C10002" xml:space="preserve">
+    <value>站點：{0}，找不到設定規則，請確認[工作站設定]</value>
+  </data>
+  <data name="C10003" xml:space="preserve">
+    <value>狀態為{0}，不可執行</value>
+  </data>
+  <data name="C10004" xml:space="preserve">
+    <value>該批號作業為{0}，不為此功能，請遵循作業規範</value>
+  </data>
+  <data name="C10005" xml:space="preserve">
+    <value>機台：{0}，不在可用機台範圍，請至[工作站設定]確認機台設定</value>
+  </data>
+  <data name="C10006" xml:space="preserve">
+    <value>機台：{0}不存在</value>
+  </data>
+  <data name="C10007" xml:space="preserve">
+    <value>批號：{0}不存在</value>
+  </data>
+  <data name="C10008" xml:space="preserve">
+    <value>批號：{0}已無下個工作站點，請確認[流程設定]</value>
+  </data>
+  <data name="C10009" xml:space="preserve">
+    <value>序號：{0}不存在</value>
+  </data>
+  <data name="C10010" xml:space="preserve">
+    <value>序號：{0}所屬批號為{1}，請確認資料正確性!</value>
+  </data>
+  <data name="C10011" xml:space="preserve">
+    <value>序號：{0}已存在於不良清單裡，請確認資料正確性!</value>
+  </data>
+  <data name="C10012" xml:space="preserve">
+    <value>請輸入生產編號!</value>
+  </data>
+  <data name="C10013" xml:space="preserve">
+    <value>不良數量不可為0!</value>
+  </data>
+  <data name="C10014" xml:space="preserve">
+    <value>找不到待判站資訊，請至系統資料維護增加資訊，屬性：{0}</value>
+  </data>
+  <data name="C10015" xml:space="preserve">
+    <value>不良數量不可大於批號數量!</value>
+  </data>
+  <data name="C10016" xml:space="preserve">
+    <value>模具：{0}不存在，請確認資料正確性!!</value>
+  </data>
+  <data name="C10017" xml:space="preserve">
+    <value>模具：{0}已停用，如需使用，請至"配件資料維護"啟用!!</value>
+  </data>
+  <data name="C10018" xml:space="preserve">
+    <value>模具儲位為{0}，不在庫房，不須領用!!</value>
+  </data>
+  <data name="C10019" xml:space="preserve">
+    <value>模具狀態為{0}，請進行降模或鉗修保養!!</value>
+  </data>
+  <data name="C10020" xml:space="preserve">
+    <value>模具狀態為{0}，不可執行此功能!!</value>
+  </data>
+  <data name="C10021" xml:space="preserve">
+    <value>模治具儲位為{0}，不在線邊，不須歸還!!</value>
+  </data>
+  <data name="C10022" xml:space="preserve">
+    <value>模治具狀態為{0}，不可執行此功能!!</value>
+  </data>
+  <data name="C10023" xml:space="preserve">
+    <value>模治具：{0}已在機台：{1}上，不可再上機!!</value>
+  </data>
+  <data name="C10024" xml:space="preserve">
+    <value>模治具儲位為{0}，尚未領用，不可執行上機!!</value>
+  </data>
+  <data name="C10025" xml:space="preserve">
+    <value>機台：{0}已停用，如需使用，請至"機台資料維護"啟用!!</value>
+  </data>
+  <data name="C10026" xml:space="preserve">
+    <value>機台狀態為{0}，不可執行此功能!!</value>
+  </data>
+  <data name="C10027" xml:space="preserve">
+    <value>模具狀態：{0}不存在!!</value>
+  </data>
+  <data name="C10028" xml:space="preserve">
+    <value>網頁沒有設定更變狀態!!</value>
+  </data>
+  <data name="C10029" xml:space="preserve">
+    <value>模治具：{0}不存在，請確認資料正確性!!</value>
+  </data>
+  <data name="C10030" xml:space="preserve">
+    <value>模治具：{0}已停用，如需使用，請至"配件資料維護"啟用!!</value>
+  </data>
+  <data name="C10031" xml:space="preserve">
+    <value>模治具：{0}不在機台上，不須下機!!</value>
+  </data>
+  <data name="C10032" xml:space="preserve">
+    <value>模治具狀態：{0}不存在!!</value>
+  </data>
+  <data name="C10033" xml:space="preserve">
+    <value>模具狀態為{0}，不須進行鉗修作業!!</value>
+  </data>
+  <data name="C10034" xml:space="preserve">
+    <value>模具狀態為{0}，不可進行降模作業!!</value>
+  </data>
+  <data name="C10035" xml:space="preserve">
+    <value>模具儲位為{0}，不在庫房，不可進行降模作業!!</value>
+  </data>
+  <data name="C10036" xml:space="preserve">
+    <value>料號({0})設定為混合，則滿箱數({1})必須為雙數!</value>
+  </data>
+  <data name="C10037" xml:space="preserve">
+    <value>料號({0})設定為混合，找不到對應的料號({1})資訊!</value>
+  </data>
+  <data name="C10038" xml:space="preserve">
+    <value>料號({0})系統屬性{1}:{2}與料號({3})系統屬性{4}:{5}需相同!</value>
+  </data>
+  <data name="C10039" xml:space="preserve">
+    <value>料號({0})系統屬性{1}:{2}應為{3}!</value>
+  </data>
+  <data name="C10040" xml:space="preserve">
+    <value>鍛造批號({0}):分在兩個機加批上，請改刷工單號!</value>
+  </data>
+  <data name="C10041" xml:space="preserve">
+    <value>包裝方式為Standard(單手)只允許輸入料號({0})的批號!</value>
+  </data>
+  <data name="C10042" xml:space="preserve">
+    <value>包裝方式為Mix(左右手)只允許輸入料號({0},{1})的批號!</value>
+  </data>
+  <data name="C10043" xml:space="preserve">
+    <value>包裝數量({0})必須符合滿箱數量({1})!</value>
+  </data>
+  <data name="C10044" xml:space="preserve">
+    <value>左右手包裝數量需相同:{0}數量({1}),{2}數量({3})!</value>
+  </data>
+  <data name="C10045" xml:space="preserve">
+    <value>台車編號：{0} 不存在!!</value>
+  </data>
+  <data name="C10046" xml:space="preserve">
+    <value>台車編號：{0} 沒有掛載任何批號!!</value>
+  </data>
+  <data name="C10047" xml:space="preserve">
+    <value>工件序號：{0} 不存在!!</value>
+  </data>
+  <data name="C10048" xml:space="preserve">
+    <value>鍛造位置：{0} 無任何工件序號</value>
+  </data>
+  <data name="C10049" xml:space="preserve">
+    <value>工件已執行過中心孔量測!</value>
+  </data>
+  <data name="C10050" xml:space="preserve">
+    <value>流程找不到待判站!</value>
+  </data>
+  <data name="C10051" xml:space="preserve">
+    <value>工單：{0}，機台：{1} 已有資料存在，無法進行新增。</value>
+  </data>
+  <data name="C10052" xml:space="preserve">
+    <value>工單：{0}，機台：{1} 未有資料存在，無法進行{2}。</value>
+  </data>
+  <data name="C10053" xml:space="preserve">
+    <value>機台:{0}，查無任何檢驗資料!</value>
+  </data>
+  <data name="C10054" xml:space="preserve">
+    <value>批號不在第一站</value>
+  </data>
+  <data name="C10055" xml:space="preserve">
+    <value>批號已上自動線</value>
+  </data>
+  <data name="C10056" xml:space="preserve">
+    <value>庫存表中不存在此箱號:{0}。</value>
+  </data>
+  <data name="C10057" xml:space="preserve">
+    <value>箱號:{0} 重複。</value>
+  </data>
+  <data name="C10058" xml:space="preserve">
+    <value>工件序號:{0} 不屬於自動線!</value>
+  </data>
+  <data name="C00007" xml:space="preserve">
+    <value>該設備沒有註冊過!!!</value>
+  </data>
+  <data name="C00008" xml:space="preserve">
+    <value>新增使用者狀態失敗!!!</value>
+  </data>
+  <data name="C00009" xml:space="preserve">
+    <value>使用者狀態不存在!!!</value>
+  </data>
+  <data name="C10059" xml:space="preserve">
+    <value>機台{0}找不到檢驗單!</value>
+  </data>
+  <data name="C10060" xml:space="preserve">
+    <value>批號{0}找不到子單元!</value>
+  </data>
+  <data name="C10061" xml:space="preserve">
+    <value>批號{0}子單元數量大於1!</value>
+  </data>
+  <data name="C10062" xml:space="preserve">
+    <value>生產編號:{0} 查無檢驗資料!</value>
+  </data>
+  <data name="C10063" xml:space="preserve">
+    <value>生產編號:{0} 沒有機台可以選擇!</value>
+  </data>
+  <data name="C10064" xml:space="preserve">
+    <value>生產編號:{0} 沒有序號可以選擇!</value>
+  </data>
+  <data name="C10065" xml:space="preserve">
+    <value>序號:{0} 沒有機台檢驗資料可以顯示!</value>
+  </data>
+  <data name="C10066" xml:space="preserve">
+    <value>請輸入正確的機台/序號!</value>
+  </data>
+  <data name="C10067" xml:space="preserve">
+    <value>網頁沒有設定QCType!</value>
+  </data>
+  <data name="C10068" xml:space="preserve">
+    <value>工作站:{0} 系統屬性設定沒有開啟預約功能!</value>
+  </data>
+  <data name="C10069" xml:space="preserve">
+    <value>PPK結果選擇OK，檢驗清單不得勾選任何資料！</value>
+  </data>
+  <data name="C10070" xml:space="preserve">
+    <value>PPK結果選擇NG，檢驗清單至少勾選一筆資料！</value>
+  </data>
+  <data name="C00010" xml:space="preserve">
+    <value>機台上華司物料批號總數不可大於{0}筆資料</value>
+  </data>
+  <data name="C10071" xml:space="preserve">
+    <value>機台:{0} {1}孔沒有上料！</value>
+  </data>
+  <data name="C00011" xml:space="preserve">
+    <value>{0} 已經使用過!</value>
+  </data>
+  <data name="C00012" xml:space="preserve">
+    <value>一個機台、一個位置只能對應一個物料編號</value>
+  </data>
+  <data name="C00013" xml:space="preserve">
+    <value>機台上不存在華司物料批號!</value>
+  </data>
+  <data name="C10072" xml:space="preserve">
+    <value>切換使用者權限失敗(使用者:{0})！</value>
+  </data>
+  <data name="C10073" xml:space="preserve">
+    <value>來源路徑位置:{0} 不存在！</value>
+  </data>
+  <data name="C10074" xml:space="preserve">
+    <value>目標路徑位置:{0} 不存在！</value>
+  </data>
+  <data name="C10075" xml:space="preserve">
+    <value>找不到機台:{0}，孔位{1}的華司上機資料！</value>
+  </data>
+  <data name="C00014" xml:space="preserve">
+    <value>機加批號已經領料完成!</value>
+  </data>
+  <data name="C10076" xml:space="preserve">
+    <value>工件:{0}必須為第一站OP1(目前所在站點為:{1})</value>
+  </data>
+  <data name="C00015" xml:space="preserve">
+    <value>華司批號的物料編號與輸入的物料編號不相同 !</value>
+  </data>
+  <data name="C10077" xml:space="preserve">
+    <value>工件序號:{0} 必須執行中心孔量測，但尚未執行中心孔量測動作！</value>
+  </data>
+  <data name="C00016" xml:space="preserve">
+    <value>來料序號已結批!</value>
+  </data>
+  <data name="C00017" xml:space="preserve">
+    <value>不良ID的箱號與輸入的箱號不相同!</value>
+  </data>
+  <data name="C00018" xml:space="preserve">
+    <value>選擇允退時需新增不良清單!</value>
+  </data>
+  <data name="C10078" xml:space="preserve">
+    <value>中心孔量測檔案:{0} 不存在！</value>
+  </data>
+  <data name="C10079" xml:space="preserve">
+    <value>中心孔量測檔案:{0} 文件行數小於{1}，格式不符，請檢查文件來源！</value>
+  </data>
+  <data name="C10080" xml:space="preserve">
+    <value>工件序號:{0} 巡檢異常，必須將該工件排出！</value>
+  </data>
+  <data name="C10081" xml:space="preserve">
+    <value>工件序號:{0} 中心孔量測的結果為NG，必須將該工件排出！</value>
+  </data>
+  <data name="C10082" xml:space="preserve">
+    <value>工件序號:{0} 組裝結果為NG，必須將該工件排出！</value>
+  </data>
+  <data name="C00019" xml:space="preserve">
+    <value>依照型號類型:{0}, {1}沒有資料可以顯示!</value>
+  </data>
+  <data name="C10083" xml:space="preserve">
+    <value>人員{0}已上到機台{1}!</value>
+  </data>
+  <data name="C00020" xml:space="preserve">
+    <value>輸入的箱號倉位與已加入的批號倉位不同!</value>
+  </data>
+  <data name="C10084" xml:space="preserve">
+    <value>工件序號({0})所在工作站({1}) 與 ({2}) 不同 !</value>
+  </data>
+  <data name="C10085" xml:space="preserve">
+    <value>子單元{0}未執行中心孔量測 !</value>
+  </data>
+  <data name="C10086" xml:space="preserve">
+    <value>機台{0}找不到孔位{1}的檔案 !</value>
+  </data>
+  <data name="C10087" xml:space="preserve">
+    <value>找不到人員於機台({0})的上工資料 !</value>
+  </data>
+  <data name="C10088" xml:space="preserve">
+    <value>找不到人員({0})於機台({1})與批號({2})的上工資料 !</value>
+  </data>
+  <data name="C10089" xml:space="preserve">
+    <value>找不到機台({0})與批號({1})的機時資料 !</value>
+  </data>
+  <data name="C10090" xml:space="preserve">
+    <value>溫度必須為數字型態!</value>
+  </data>
+  <data name="C10091" xml:space="preserve">
+    <value>刻字內容:{0} 必須等於16碼!</value>
+  </data>
+  <data name="C10092" xml:space="preserve">
+    <value>工件數量({0})達到滿箱數量({1}) !</value>
+  </data>
+  <data name="C10093" xml:space="preserve">
+    <value>工件已暫存請使用暫存工件輸入 !</value>
+  </data>
+  <data name="C00021" xml:space="preserve">
+    <value>華司批號不可以上同一個機台的兩個位置!</value>
+  </data>
+  <data name="C10094" xml:space="preserve">
+    <value>批號({0})數量:{1}大於機台({2})孔位:{3}華司數量:{4} !</value>
+  </data>
+  <data name="C10095" xml:space="preserve">
+    <value>鍛造批號:{0} 已存在，不可再執行入庫!</value>
+  </data>
+  <data name="C10096" xml:space="preserve">
+    <value>找不到人員於線別({0})與工位({1})的上工資料 !</value>
+  </data>
+  <data name="C10097" xml:space="preserve">
+    <value>線別({0})與工位({1})已有使用者({2})工單({3})的上工資料 !</value>
+  </data>
+  <data name="C10098" xml:space="preserve">
+    <value>找不到人員於線別({0})與工位({1})的開工資料 !</value>
+  </data>
+  <data name="C10099" xml:space="preserve">
+    <value>EQP組裝結果回傳: {0}，內容必須為1或2!</value>
+  </data>
+  <data name="C10100" xml:space="preserve">
+    <value>序號:{0} 檢驗主檔狀態為{1}，不可以執行!</value>
+  </data>
+  <data name="C00022" xml:space="preserve">
+    <value>序號不存在或已被領用出貨，請確認!!</value>
+  </data>
+  <data name="C00023" xml:space="preserve">
+    <value>生產編號 {0} 輸入錯誤或是沒有領料，請確認!!</value>
+  </data>
+  <data name="C10101" xml:space="preserve">
+    <value>找不到機加批號({0})與工單的對應檔案 !</value>
+  </data>
+  <data name="C10102" xml:space="preserve">
+    <value>非自動線工單({0})不可使用上自動線 !</value>
+  </data>
+  <data name="C10103" xml:space="preserve">
+    <value>找不到任何機台，請確認傳入的線別({0})及系統資料設定({1})是否正確 !</value>
+  </data>
+  <data name="C10104" xml:space="preserve">
+    <value>機台({0})已有使用者({1})工單({2})的上工資料 !</value>
+  </data>
+  <data name="C10105" xml:space="preserve">
+    <value>調機開始只允許輸入兩筆工單 !</value>
+  </data>
+  <data name="C10106" xml:space="preserve">
+    <value>機台({0})已有調機資料 !</value>
+  </data>
+  <data name="C00025" xml:space="preserve">
+    <value>機台 {0} 尚未調機完成，請先執行調機作業!!</value>
+  </data>
+  <data name="C00026" xml:space="preserve">
+    <value>找不到首件檢驗的資料，請確認是否已執行調機作業!!!</value>
+  </data>
+  <data name="C00027" xml:space="preserve">
+    <value>機台{0}，機台狀態 [{1}]，正在進行首件程序，請先確認首件狀態!!</value>
+  </data>
+  <data name="C00028" xml:space="preserve">
+    <value>無機台狀態{0}的設定資料!</value>
+  </data>
+  <data name="C10107" xml:space="preserve">
+    <value>找不到調機開始的工單資料 !</value>
+  </data>
+  <data name="C10108" xml:space="preserve">
+    <value>沒有機台({0})調機開始的資料 !</value>
+  </data>
+  <data name="C00024" xml:space="preserve">
+    <value>程式新增設定傳入的參數{0} : {1} 錯誤，請聯繫IT修正!!!</value>
+  </data>
+  <data name="C10109" xml:space="preserve">
+    <value>沒有人員上工資料 !</value>
+  </data>
+  <data name="C10110" xml:space="preserve">
+    <value>檢驗單號:{0} 查無相同的BatchID!</value>
+  </data>
+  <data name="C10111" xml:space="preserve">
+    <value>機台:{0} 沒有檢驗資料可以顯示!</value>
+  </data>
+  <data name="C10112" xml:space="preserve">
+    <value>檢驗結果主檔筆數({0})與檢驗單明細筆數({1})不相同!</value>
+  </data>
+  <data name="C10113" xml:space="preserve">
+    <value>機台({0})料號:({1})未進行({2})檢驗 !</value>
+  </data>
+  <data name="C10114" xml:space="preserve">
+    <value>批號({0})已進行檢驗中，不可以再做巡檢 !</value>
+  </data>
+  <data name="C10115" xml:space="preserve">
+    <value>資料已經存在，請直接點選資料進行修改 !</value>
+  </data>
+  <data name="C10116" xml:space="preserve">
+    <value>料號({0})及機台({1}) 查無任何資訊，不可執行複製動作!</value>
+  </data>
+  <data name="C10117" xml:space="preserve">
+    <value>料號({0})及機台({1}) 資料已存在，不可執行複製動作!</value>
+  </data>
+  <data name="C10118" xml:space="preserve">
+    <value>PPK 工件檢驗數據未齊，無法執行 PPK 判定!</value>
+  </data>
+  <data name="C10119" xml:space="preserve">
+    <value>檔案名稱:{0} 已存在!</value>
+  </data>
+  <data name="C10120" xml:space="preserve">
+    <value>供應商:{0} 資料已存在!</value>
+  </data>
+  <data name="C10121" xml:space="preserve">
+    <value>刀具類型:{0} 資料已存在!</value>
+  </data>
+  <data name="C10122" xml:space="preserve">
+    <value>請新增一筆刀具類型資料!</value>
+  </data>
+  <data name="C10123" xml:space="preserve">
+    <value>刀具:{0}找不到刀頭資料 !</value>
+  </data>
+  <data name="C10124" xml:space="preserve">
+    <value>刀具:{0} 位置:{1} 不可領用 !</value>
+  </data>
+  <data name="C10125" xml:space="preserve">
+    <value>檔案名稱:{0}已上傳完成 !</value>
+  </data>
+  <data name="C10126" xml:space="preserve">
+    <value>刀具類型:{0} 必須上傳檢驗報告資料 !</value>
+  </data>
+  <data name="C10127" xml:space="preserve">
+    <value>刀具零組件:{0} 不在庫房，不可執行此功能!!</value>
+  </data>
+  <data name="C10128" xml:space="preserve">
+    <value>刀具零組件：{0}已停用，如需使用，請至"刀具零組件進料作業"啟用!!</value>
+  </data>
+  <data name="C10129" xml:space="preserve">
+    <value>刀具零組件狀態為{0}，不可執行此功能!!</value>
+  </data>
+  <data name="C10130" xml:space="preserve">
+    <value>刀具零組件:{0} 無刀面設定資料!!</value>
+  </data>
+  <data name="C10131" xml:space="preserve">
+    <value>刀具零組件：{0}未領用、不能上機!</value>
+  </data>
+  <data name="C10132" xml:space="preserve">
+    <value>刀具零組件：{0}已在機台：{1}上，不可再上機!</value>
+  </data>
+  <data name="C10133" xml:space="preserve">
+    <value>刀具零組件：{0}未有機台安裝，無須執行下機!</value>
+  </data>
+  <data name="C10134" xml:space="preserve">
+    <value>刀具零組件：{0}不在機台：{1}上，無法於此機台執行下機!</value>
+  </data>
+  <data name="C10135" xml:space="preserve">
+    <value>刀具零組件：{0}已在機台：{1}上，不可拆群組!</value>
+  </data>
+  <data name="C10136" xml:space="preserve">
+    <value>刀具零組件已被全部勾選，無法拆群組!</value>
+  </data>
+  <data name="C10137" xml:space="preserve">
+    <value>工件編號:{0} 於MES_WIP_COMP查無對應資料!</value>
+  </data>
+  <data name="C10138" xml:space="preserve">
+    <value>刀具零組件：{0}已在機台：{1}上，不可執行刀具零組件歸還!</value>
+  </data>
+  <data name="C10139" xml:space="preserve">
+    <value>於(BPM_MES_EMPSHIFT)找不到人員班別資料 !</value>
+  </data>
+  <data name="C00029" xml:space="preserve">
+    <value>工作站{0}不包含此機台{1}，請確認工作站機台設定!!</value>
+  </data>
+  <data name="C10140" xml:space="preserve">
+    <value>找不到機台({0})與料號({1})的刀具零組件設定資料 !</value>
+  </data>
+  <data name="C10141" xml:space="preserve">
+    <value>機台({0})與料號({1})的刀具類別({2})領用數量必須為:{3} !</value>
+  </data>
+  <data name="C10142" xml:space="preserve">
+    <value>找不到刀具驗證資訊 !</value>
+  </data>
+  <data name="C00030" xml:space="preserve">
+    <value>工件{0}不屬於Runcard {1}，請確認!!</value>
+  </data>
+  <data name="C10143" xml:space="preserve">
+    <value>除外人員({0})已經有除外資料請先進行除外結束 !</value>
+  </data>
+  <data name="C10144" xml:space="preserve">
+    <value>除外人員({0})沒有除外開始資料 !</value>
+  </data>
+  <data name="C10145" xml:space="preserve">
+    <value>機台:{0} 沒有華司物料編號{1}的資料！</value>
+  </data>
+  <data name="C10146" xml:space="preserve">
+    <value>工件編號({0}) [PROCESS_EQUIP]沒有資料 !</value>
+  </data>
+  <data name="C00031" xml:space="preserve">
+    <value>機台{0}目前狀態為停機{1}，請先確認是否調機完成!!</value>
+  </data>
+  <data name="C00032" xml:space="preserve">
+    <value>機台{0}目前狀態為待送首件{1}，請先完成首件程序!!</value>
+  </data>
+  <data name="C00033" xml:space="preserve">
+    <value>機台{0}目前狀態為首件待接收{1}，請先完成首件程序!!</value>
+  </data>
+  <data name="C00034" xml:space="preserve">
+    <value>機台{0}目前狀態為待執行首件{1}，請先完成首件程序!!</value>
+  </data>
+  <data name="C00035" xml:space="preserve">
+    <value>機台{0}目前狀態為首件中{1}，請先完成首件程序!!</value>
+  </data>
+  <data name="C00036" xml:space="preserve">
+    <value>機台{0}目前狀態為{1}，請先完成穩定度測試!!</value>
+  </data>
+  <data name="C10147" xml:space="preserve">
+    <value>機台編號:{0} 沒有刀具上機資料!!</value>
+  </data>
+  <data name="C10148" xml:space="preserve">
+    <value>刀具零組件:{0} 不在上機清單內!!</value>
+  </data>
+  <data name="C10149" xml:space="preserve">
+    <value>刀具零組件狀態: {0}不存在，請至配件狀態維護新增此狀態!!</value>
+  </data>
+  <data name="C10150" xml:space="preserve">
+    <value>格式必須為正整數，且使用逗號隔開(例如:1,2,3)!!</value>
+  </data>
+  <data name="C10151" xml:space="preserve">
+    <value>刀具類型:{0}，刀面數量({1})設定有誤，請至刀具類型維護修改此數量!!</value>
+  </data>
+  <data name="C10152" xml:space="preserve">
+    <value>刀具零組件：{0} 已在機台({1})上，請先執行刀具下機!!</value>
+  </data>
+  <data name="C10153" xml:space="preserve">
+    <value>刀具零組件：{0} 只有一個刀面，不能更換刀面!!</value>
+  </data>
+  <data name="C10154" xml:space="preserve">
+    <value>此機台+料號已有設定資料，如要重新設定，請先刪除再新增設定資料!!</value>
+  </data>
+  <data name="C10155" xml:space="preserve">
+    <value>找不到目前班別資料請確認系統資料設定類別(Shift)是否正確 !</value>
+  </data>
+  <data name="C10156" xml:space="preserve">
+    <value>{0}班人員不可上{1}班 !</value>
+  </data>
+  <data name="C10157" xml:space="preserve">
+    <value>找不到人員({0})與批號({1})的開工資料 !</value>
+  </data>
+  <data name="C10158" xml:space="preserve">
+    <value>刀壽設定分頁中，請新增一筆資料!</value>
+  </data>
+  <data name="C10159" xml:space="preserve">
+    <value>預定回廠日必須大於等於{0} !</value>
+  </data>
+  <data name="C10160" xml:space="preserve">
+    <value>批號({0})仍未換班 !</value>
+  </data>
+  <data name="C10161" xml:space="preserve">
+    <value>批號完工數量{0}已大於等於批號數量{1} !</value>
+  </data>
+  <data name="C10162" xml:space="preserve">
+    <value>最新一筆Component資料({0})，CPFSN為空白，無法正常取得CPF_SN!</value>
+  </data>
+  <data name="C10163" xml:space="preserve">
+    <value>最新一筆Component資料({0})，CPFN({1})碼長不為四碼，無法正常取得CPF_SN!</value>
+  </data>
+  <data name="C10164" xml:space="preserve">
+    <value>最新一筆Component資料({0})，CPFN({1})前二碼不為數字，無法正常取得CPF_SN!</value>
+  </data>
+  <data name="C10165" xml:space="preserve">
+    <value>[CST_CMS_CAR_PROCESS]查無台車可使用!</value>
+  </data>
+  <data name="C10166" xml:space="preserve">
+    <value>請使用工單領料與下線規則 !</value>
+  </data>
+  <data name="C10167" xml:space="preserve">
+    <value>請使用重工工單領料與下線規則 !</value>
+  </data>
+  <data name="C00037" xml:space="preserve">
+    <value>找不到小工單號({0})與工單的對應檔案 !</value>
+  </data>
+  <data name="C00038" xml:space="preserve">
+    <value>找不到檢驗資料!!</value>
+  </data>
+  <data name="C00039" xml:space="preserve">
+    <value>工單批號 {0} 所屬工件，中心孔已全部量測完畢!!</value>
+  </data>
+  <data name="C10168" xml:space="preserve">
+    <value>型號名稱與暫包時候不同 !</value>
+  </data>
+  <data name="C10169" xml:space="preserve">
+    <value>刀具數量必須等於1，才可執行上傳檢驗報 !</value>
+  </data>
+  <data name="C00040" xml:space="preserve">
+    <value>工件批號 {0} 有DMC資訊未收集，請執行相關功能收集DMC資訊!!</value>
+  </data>
+  <data name="C10170" xml:space="preserve">
+    <value>變更回廠日必須大於等於{0} !</value>
+  </data>
+  <data name="C10171" xml:space="preserve">
+    <value>機台({0})與料號({1})未進行刀具驗證 !</value>
+  </data>
+  <data name="C10172" xml:space="preserve">
+    <value>工號{4} : 上工日期({0})班別({1})與目前日期({2})班別({3})，請重新上工 !</value>
+  </data>
+  <data name="C00041" xml:space="preserve">
+    <value>機台{0}，{1}孔沒有華司物料批資訊，請確認!!</value>
+  </data>
+  <data name="C00042" xml:space="preserve">
+    <value>工作站{0}不需收集中心孔或DMC資訊，請確認!!!</value>
+  </data>
+  <data name="C00043" xml:space="preserve">
+    <value>料號{0}該產品不需收集中心孔資訊，請確認!!!</value>
+  </data>
+  <data name="C10173" xml:space="preserve">
+    <value>找不到機台({0})與工單({1})的機時資料 !</value>
+  </data>
+  <data name="C00044" xml:space="preserve">
+    <value>刀具{0}已報廢，不可領用!!</value>
+  </data>
+  <data name="C00045" xml:space="preserve">
+    <value>刀具{0}送修未回廠，不可領用!!</value>
+  </data>
+  <data name="C10174" xml:space="preserve">
+    <value>同入庫批({0})的爐號必須相同!(LotID:{1};爐號:{2}；Create的爐號為:{3})</value>
+  </data>
+  <data name="C00046" xml:space="preserve">
+    <value>找不到刀具{0}送修紀錄，請確認!!!</value>
+  </data>
+  <data name="C00047" xml:space="preserve">
+    <value>請選擇一種查詢條件!!</value>
+  </data>
+  <data name="C10175" xml:space="preserve">
+    <value>工件序號{0}已在待判站，不需再送待判 !</value>
+  </data>
+  <data name="C10176" xml:space="preserve">
+    <value>找不到批號({0})的開工資料 !</value>
+  </data>
+  <data name="C10177" xml:space="preserve">
+    <value>小工單({0})及鍛造/入庫批號({1}) 查無資料 !</value>
+  </data>
+  <data name="C10178" xml:space="preserve">
+    <value>來料批號({0}) 查無資料 !</value>
+  </data>
+  <data name="C10179" xml:space="preserve">
+    <value>來料批號({0})對應爐號({1}) 查無資料 !</value>
+  </data>
+  <data name="C10180" xml:space="preserve">
+    <value>鍛造/入庫批號:{0} 查無對應的工件資料 !</value>
+  </data>
+  <data name="C10181" xml:space="preserve">
+    <value>人員({0})已開始除外不可以上工 !</value>
+  </data>
+  <data name="C10182" xml:space="preserve">
+    <value>僅接受格式為.jpg /.jpeg/.png/.bmp的檔案！</value>
+  </data>
+  <data name="C10183" xml:space="preserve">
+    <value>PLC工件點位為空值！</value>
+  </data>
+  <data name="C10184" xml:space="preserve">
+    <value>查無IQC來料資訊(CST_MMS_IQC_INFO無資料)！</value>
+  </data>
+  <data name="C00048" xml:space="preserve">
+    <value>批號{0}不在裝配站，請確認工作流程，或至系統資料設定增加分類 SAIAssemblyOperation 的設定!!!</value>
+  </data>
+  <data name="C10185" xml:space="preserve">
+    <value>機台:{0} 己經上了{1}個物料序號，不可再執行上料動作！</value>
+  </data>
+  <data name="C10186" xml:space="preserve">
+    <value>機台:{0} 已超過設定工單數量{1}！</value>
+  </data>
+  <data name="C10187" xml:space="preserve">
+    <value>查無送待判原因！</value>
+  </data>
+  <data name="C00049" xml:space="preserve">
+    <value>DMC {0} 未落入系統，請改選擇工作站!!</value>
+  </data>
+  <data name="C00050" xml:space="preserve">
+    <value>工單號{0}在站點 {1} 沒有批號可送待判!!</value>
+  </data>
+  <data name="C10188" xml:space="preserve">
+    <value>查無鍛造品檢預設的檢驗類型 !</value>
+  </data>
+  <data name="C00051" xml:space="preserve">
+    <value>找不到原因碼設定資料，原因碼{0}!!</value>
+  </data>
+  <data name="C10189" xml:space="preserve">
+    <value>批號{0} 狀態必須為WaitMerge才可執行此功能！</value>
+  </data>
+  <data name="C00052" xml:space="preserve">
+    <value>DMC{0}已收集過，請勿重複輸入!!</value>
+  </data>
+  <data name="C00053" xml:space="preserve">
+    <value>原因碼分類 {0}，未設定原因碼 {1}，請至原因碼管理添加!!</value>
+  </data>
+  <data name="C00054" xml:space="preserve">
+    <value>工件{0} 找不到暫存的資料，請確認!!</value>
+  </data>
+  <data name="C10190" xml:space="preserve">
+    <value>機台:{0} 查無出站記錄！</value>
+  </data>
+</root>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="W035_ds" targetNamespace="http://tempuri.org/dsRunCard.xsd" elementFormDefault="qualified" xmlns="http://tempuri.org/dsRunCard.xsd" xmlns:mstns="http://tempuri.org/dsRunCard.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="LOTDATA">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="CartonNo" type="xs:string" />
+        <xs:element name="DeviceDescr1" type="xs:string" />
+        <xs:element name="DeviceDescr2" type="xs:string" />
+        <xs:element name="CustomerNo1" type="xs:string" />
+        <xs:element name="CustomerNo2" type="xs:string" />
+        <xs:element name="Device1" type="xs:string" />
+        <xs:element name="Device2" type="xs:string" />
+        <xs:element name="Quantity1" type="xs:string" />
+        <xs:element name="Quantity2" type="xs:string" />
+        <xs:element name="Remark" type="xs:string" />
+        <xs:element name="Inspectors" type="xs:string" />
+        <xs:element name="Packers" type="xs:string" />
+        <xs:element name="InspectionDate" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="COMPDATA">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ComponentID1" type="xs:string" />
+        <xs:element name="ComponentID2" type="xs:string" />
+        <xs:element name="Quantity1" type="xs:int" />
+        <xs:element name="Quantity2" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
